@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(233, 236, 199);
+    color: white;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+.container h1{
+    font-size: 45px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container span{
+    color: #008b8b;
+    border-bottom: 1px solid #008b8b;
+}
+.inputcnt{
+    padding-top: 20px;
+    width: 100%;
+    
+}
+.inputpass{
+     position: relative;
+     width: 60%;
+}
+#password{
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+       padding-right: 40px;
+}
+.inputpass img{
+    position: absolute;
+    right: 0;
+    transform:translateY(30%) ;
+}
+.generation{
+    position: relative;
+    width: 20%;
+    padding-top: 30px;
+}
+.generation button{
+    padding: 10px;
+    width: 100%;
+    text-align: right;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 2px 5px #008b8b;
+    cursor: pointer;
+}
+.generation img{
+    position: absolute;
+    left: 0;
+    width: 35px;
+}
