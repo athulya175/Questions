@@ -1,0 +1,48 @@
+body{
+    margin-left: 100px;
+    margin-top: 100px;
+    background-color: white;
+    min-height: 100vh;
+    background: linear-gradient(to bottom ,pink,white);
+}
+.head{
+    font-size: 25px;
+    color: white;
+    font-weight: 700;
+}
+.createnotebtn{
+    display: block;
+    background-color: rgb(255, 170, 184);
+    border-radius: 50px;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+.btn img{
+    width: 20px;
+    height: 20px;
+}
+.btn{
+    padding: 20px;
+    margin-left:5px;
+   
+}
+/* .container{
+    background-color: white;
+    width: 560px;
+    height: 560px;
+} */
+ textarea{
+    width: 500px;
+    height: 100px;
+    position: relative;
+ }
+.trashicon{
+    position: absolute;
+    margin-left: -31px;
+    width: 25px;
+    width: 25px;
+    margin-bottom: 10px;
+    margin-top: 71px;
+}

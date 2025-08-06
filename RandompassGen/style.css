@@ -55,5 +55,7 @@ body{
 .generation img{
     position: absolute;
     left: 0;
-    width: 35px;
+    width: 20px;
+    top: 35px;
+   
 }
