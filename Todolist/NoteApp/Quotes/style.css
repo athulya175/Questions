@@ -19,7 +19,9 @@ body{
      padding: 15px;
      border: none;
      border-radius: 50px;
+       cursor: pointer;
 }
+
 .btn img{
     width: 15px;
     margin-right: 2px;
