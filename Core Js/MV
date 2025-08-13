@@ -19,3 +19,20 @@ Hoisting
 
 % variable var has only scope outside the block
 
+
+% in looping there is for of and for in 
+
+for of is used to get values 
+for in is used to get valaues and index
+
+ARROW FUNCTION---> const function_name =(params)=>{}
+
+% To add an element at the begining of an array use unshift--->unshift("element")
+% To remove an element at the begining of an array use shift---->Shift()
+% To remove at a perticular index we can use splice operator---->splice(starting index,delete count)
+
+let arry1=[4,2,9,1]
+let sorts=arry1.sort((a,b)=>a-b)           -->if a-b is negative then a comes before b else b
+console.log(sorts)
+
+% to get length of a object need to use object.key

@@ -192,13 +192,13 @@
 */
 
 
-/*
+
 function CountVovels(str){
     return(str.match(/[aeiou]/gi)||[]).length
 }
 console.log(CountVovels("hello"))
 
-*/
+
 /* Explanations--->This is a regular expression(regex)
     [aeiou]--->looking for any one match these characters
     /gi ---->g-->Global flag(find all matches,Not just the first)

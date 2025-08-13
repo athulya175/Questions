@@ -1,0 +1,88 @@
+Beginner Level
+Change Background Color on Button Click
+
+HTML: A button.
+
+CSS: Any basic styling.
+
+JS Task: When the button is clicked, change the background color of the page.
+
+Toggle Text Visibility
+
+HTML: A paragraph and a button.
+
+JS Task: When the button is clicked, hide or show the paragraph.
+
+Counter
+
+HTML: A number display, a button for increment, a button for decrement.
+
+JS Task: Update the number when buttons are clicked.
+
+Change Text on Hover
+
+HTML: A paragraph.
+
+JS Task: When the user hovers over it, change the text; revert when the mouse leaves.
+
+Intermediate Level
+Dynamic List Creation
+
+HTML: Input box and "Add Item" button.
+
+JS Task: Add the input value as a new <li> in a <ul>.
+
+Color Picker
+
+HTML: Color input field and a div.
+
+JS Task: When a color is selected, change the div’s background to that color.
+
+Simple To-Do App
+
+HTML: Input, add button, and a <ul> for tasks.
+
+JS Task: Add tasks to the list, mark them completed when clicked, and optionally remove them.
+
+Accordion
+
+HTML: Multiple sections with headers.
+
+JS Task: Clicking a header toggles the visibility of its content while hiding other sections.
+
+Image Slider
+
+HTML: A container with an image and next/previous buttons.
+
+JS Task: Clicking buttons cycles through an array of images.
+
+Challenge Level
+Form Validation
+
+HTML: Form with name, email, password fields.
+
+JS Task: Validate that name is not empty, email contains @, password is at least 6 characters. Show error messages dynamically.
+
+Drag and Drop
+
+HTML: Two divs.
+
+JS Task: Drag an element from one div to the other.
+
+Theme Switcher
+
+HTML: Toggle button.
+
+JS Task: Switch between light mode and dark mode by changing classes on the <body>.
+
+Modal Popup
+
+HTML: Button to open a modal and modal content.
+
+JS Task: Clicking the button opens the modal, clicking the close icon closes it.
+
+Filter Table Data
+
+HTML: Table with rows and an input box.
+
+JS Task: Filter rows dynamically based on the input text.
