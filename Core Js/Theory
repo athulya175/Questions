@@ -1,0 +1,120 @@
+1. Core JavaScript Fundamentals (You’ve already done most of this 💪)
+    These are must-know basics:
+
+    Data types → string, number, boolean, null, undefined, symbol, bigint
+
+    Variables → var, let, const (scope & hoisting)
+
+    Operators → arithmetic, comparison, logical, ternary
+
+    Conditional statements → if, else if, else, switch
+
+    Loops → for, while, do...while, for...of, for...in
+
+    Functions → regular, arrow functions, parameters & return values
+
+    Arrays → creation, methods (push, pop, map, filter, reduce, sort, find, etc.)
+
+    Strings → methods (split, join, slice, substring, replace, toLowerCase, etc.)
+
+    Objects → properties, methods, object destructuring
+
+    Math object → Math.random, Math.floor, Math.max, Math.min, etc.
+
+    Date object → new Date(), .getFullYear(), .toLocaleDateString(), etc.
+
+2. Intermediate JavaScript
+
+    These make you a stronger problem solver:
+
+    Functions Deep Dive → default parameters, rest/spread (...), callback functions
+
+    Array Advanced Methods → every, some, flat, flatMap
+
+    Template literals (`Hello ${name}`)
+
+    Destructuring → array & object
+
+    Sets & Maps (for unique values and key-value storage)
+
+    JSON → parse & stringify
+
+    Closures → functions inside functions that remember their scope
+
+    Recursion → function calling itself
+
+    Short-circuiting (||, &&, ??)
+
+    Error handling → try...catch
+
+3. Advanced JavaScript
+
+    These help in real-world coding:
+
+    this keyword and binding
+
+    Prototype & Inheritance
+
+    ES6+ features (let/const, arrow functions, spread/rest, modules, optional chaining ?., nullish coalescing ??)
+
+    Modules → import / export
+
+    Asynchronous JavaScript:
+
+    Callbacks
+
+    Promises
+
+    async/await
+
+    fetch API
+
+    Event loop & execution context
+
+    Hoisting (variables vs functions)
+
+    Higher-order functions
+
+    Debounce & Throttle
+
+4. DOM Manipulation (For web projects)
+
+    Selecting elements → getElementById, querySelector
+
+    Changing text, HTML, and styles
+
+    Adding/removing elements dynamically
+
+    Event listeners → click, input, submit
+
+    Form handling & validation
+
+    Traversing the DOM (parent, child, sibling)
+
+5. Browser APIs
+
+    Local Storage / Session Storage
+
+    Fetch API / AJAX
+
+    Geolocation API
+
+    Clipboard API
+
+    Audio/Video API
+
+6. Project Practice
+
+    Build small apps to apply concepts:
+
+    Calculator
+
+    To-do list
+
+    Weather app (using API)
+
+    Quiz game
+
+    Clock / Timer
+
+    Form validator

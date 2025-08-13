@@ -1,0 +1,21 @@
+big int is a built-int numeric type in js for integers larger than number 
+
+Two ways to create big int
+    1) literal with n sufix
+    2)Using the constructor
+
+% When we use map need to use split before it
+% parseInt()reads the string from left to right and stops at the first non-digit character
+% if the string doesn't start with a number it returns NaN
+
+console.log(parseInt("123abs"))    //123
+console.log(parseInt("abc123"))    //NaN
+
+
+Hoisting  
+    When js runs a code it  passes to two phases creation & execution
+        in creation phase variables that declared in var moves to the top of the scope,but they are declared only not initialized so that when we use console before initialization it says undefined insted of a refference error(like let and const)
+        Execution phase the code runs line by line
+
+% variable var has only scope outside the block
+

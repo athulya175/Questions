@@ -690,3 +690,19 @@ function Union(a,b){
 }
 console.log(Union([1,2,3,4,5],[5,6,7,8]))
 */
+
+
+
+/*
+    function MissingNo(a,n){
+        let sum=0
+        let sumarr=0
+            sum=n*(n+1)/2
+            for(let i=0;i<a.length;i++){
+                sumarr+=a[i]
+            }
+            let missing=sum-sumarr
+            return missing     
+    }
+    console.log(MissingNo([1,2,3,4,5,6],7))
+*/
