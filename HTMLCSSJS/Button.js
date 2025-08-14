@@ -232,26 +232,72 @@ form.addEventListener("submit",function(event){
     })
 */
 
-const  lists=document.getElementsByClassName("list")
-let rightBox=document.querySelector(".right")
-let leftBox=document.querySelector(".left")
-for(list of lists){
-    list.addEventListener("dragstart",function(e){
-        let selected=e.target
-  
-    rightBox.addEventListener("dragover",function(e){
-        e.preventDefault()
+
+/*
+    //problem11
+    const  lists=document.getElementsByClassName("list")
+    let rightBox=document.querySelector(".right")
+    let leftBox=document.querySelector(".left")
+    for(list of lists){
+        list.addEventListener("dragstart",function(e){
+            let selected=e.target
+    
+        rightBox.addEventListener("dragover",function(e){
+            e.preventDefault()
+        })
+        rightBox.addEventListener("drop",function(e){
+            rightBox.appendChild(selected)
+            selected=null
+        })
+        leftBox.addEventListener("dragover",function(e){
+            e.preventDefault()
+        })
+        leftBox.addEventListener("drop",function(e){
+            leftBox.appendChild(selected)
+            selected=null
+        })
     })
-    rightBox.addEventListener("drop",function(e){
-        rightBox.appendChild(selected)
-        selected=null
+    }
+*/
+
+
+/*
+    //problem12
+    const dark=document.getElementById("night")
+    const light=document.getElementById("light")
+    const content=document.querySelector(".problem12")
+    dark.addEventListener("click",()=>{
+        content.style.backgroundColor="black"
+        content.style.color="white"
     })
-    leftBox.addEventListener("dragover",function(e){
-        e.preventDefault()
+    light.addEventListener("click",()=>{
+        content.style.backgroundColor="white"
+        content.style.color="grey"
     })
-    leftBox.addEventListener("drop",function(e){
-        leftBox.appendChild(selected)
-        selected=null
+*/
+
+
+
+/*
+    //problem13
+    const btn=document.querySelector(".model")
+    btn.addEventListener("click",()=>{
+        console.log("click")
+        const div=document.createElement("div")
+        div.id="maindiv"
+        div.innerHTML=`
+            <div class="container">
+                <h1>Modal Popup!</h1>
+                <p>There are many variations of passages of Lorem Ipsum available, </p>
+                <button class=okbtn>OK</button>
+            </div>
+        `
+        document.body.appendChild(div)
+        const click=document.querySelector(".okbtn")
+        click.addEventListener("click",()=>{
+            div.remove()
+        })
     })
-  })
-}
+*/
+
+

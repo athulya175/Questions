@@ -1,0 +1,43 @@
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: #0b0423;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tube{
+     width: 100px;
+    height: 400px;
+    margin:20px;
+    border: 2px dashed #fff;
+    border-top: none;
+}
+.list{
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    margin: 30px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    cursor: grab;
+    border-radius: 50%;
+   
+}
+#l1{
+    background-color:pink
+}
+#l2{
+    background-color: aqua;
+}
+#l3{
+    background-color:rebeccapurple;
+}
+#l4{
+    background-color: cadetblue;
+}
+#l5{
+    background-color: violet;
+}
