@@ -1,4 +1,8 @@
-
+/* body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } */
 /*
 
     button{
@@ -83,5 +87,138 @@
     }
     .problem5{
         margin-top: 50px;
-    }  
+    } 
+*/ 
+
+
+
+/*
+    .color{
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid;
+    }
+    .click{
+        margin-left: 40px;
+        background-color:teal;
+        border: 0;
+        padding: 8px;
+        border-radius: 15px;
+        color: white;
+    }
+    .Showclr{
+        width: 200px;
+        height: 200px;
+        margin-top: 20px;
+        border-radius: 25px;
+        
+    }
 */
+
+
+/*
+    .wrap{
+        position: relative;
+    }
+    .input{
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid;
+    
+    }
+    .click{
+        position: absolute;
+        right: 0;
+        
+        padding: 5px;
+        cursor: pointer;
+        background-color: bisque;
+        border: 1px solid;
+        border-radius: 5px;  
+    }
+
+    .listid{
+        list-style: circle;
+        cursor: pointer;
+        position: relative;
+    }
+    li:hover{
+        background-color: aliceblue;
+        
+    }
+    span{
+        position: absolute;
+        right: 0;
+    }
+
+*/
+/* to make a button inside a input make the parent div of input and button as  position relative and buttons position absolute*/
+
+
+/*
+    dt{
+        font-size: 24px;
+        font-family: sans-serif; 
+        line-height:60px;  
+    }
+    dd{
+        font-family: sans-serif; 
+        display: none;
+    }
+*/
+
+
+/*
+    .container{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        overflow-x:auto;
+        scroll-snap-type: x mandatory;
+    }
+    .container img{
+        flex-shrink: 0;
+    width: 100vw;
+    height: 500px;  
+    display: none; 
+    }
+    .btn{
+        position: absolute;
+        top: 25%;
+        padding: 18px 12px;
+        background-color: rgba(255, 255, 255, 0.404);
+        border:none;
+        border-radius: 3px;
+        font-size: 18px;
+        color: white;
+    }
+    #prev{
+        right: 0;
+        margin-right: 8px;
+        
+    }
+*/
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: #0b0423;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left, .right{
+    width: 300px;
+    min-height: 400px;
+    margin:20px;
+    border: 2px dashed #fff;
+}
+.list{
+    background: #e91e63;
+    height: 60px;
+    margin: 30px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    cursor: grab;
+}
