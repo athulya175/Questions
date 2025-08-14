@@ -298,3 +298,25 @@
         padding: 5px;
     }
 */
+
+th, tr, td{
+    border: 1px solid;
+    padding: 12px;
+}
+input{
+    margin-left: 25px;
+    padding: 5px;
+    width: 200px;
+}
+table{
+    padding: 12px;
+}
+.srch{
+    position: relative;
+}
+button{
+    position: absolute;
+    margin-left: -60px;
+   
+    top:3px
+}

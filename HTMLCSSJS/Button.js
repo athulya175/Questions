@@ -300,4 +300,14 @@ form.addEventListener("submit",function(event){
     })
 */
 
+const search=document.getElementById("searchid")
+const content=document.getElementsByTagName("td")
+search.addEventListener("click",()=>{
+    const searchitem=search.value
+    console.log(searchitem)
+    for(let td of content)
+  console.log(td.innerText)
+})
+
+
 
