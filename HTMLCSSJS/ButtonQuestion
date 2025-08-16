@@ -1,0 +1,176 @@
+Absolutely! Here’s a list of **JavaScript practice questions** that involve **HTML and CSS**, so you can work on DOM manipulation, events, styling, and dynamic behavior. I’ll categorize them from beginner to intermediate.
+
+---
+
+### **Beginner Level**
+
+1. **Change Background Color on Button Click**
+
+   * **HTML:** A button.
+   * **CSS:** Any basic styling.
+   * **JS Task:** When the button is clicked, change the background color of the page.
+
+2. **Toggle Text Visibility**
+
+   * **HTML:** A paragraph and a button.
+   * **JS Task:** When the button is clicked, hide or show the paragraph.
+
+3. **Counter**
+
+   * **HTML:** A number display, a button for increment, a button for decrement.
+   * **JS Task:** Update the number when buttons are clicked.
+
+4. **Change Text on Hover**
+
+   * **HTML:** A paragraph.
+   * **JS Task:** When the user hovers over it, change the text; revert when the mouse leaves.
+
+---
+
+### **Intermediate Level**
+
+5. **Dynamic List Creation**
+
+   * **HTML:** Input box and "Add Item" button.
+   * **JS Task:** Add the input value as a new `<li>` in a `<ul>`.
+
+6. **Color Picker**
+
+   * **HTML:** Color input field and a div.
+   * **JS Task:** When a color is selected, change the div’s background to that color.
+
+7. **Simple To-Do App**
+
+   * **HTML:** Input, add button, and a `<ul>` for tasks.
+   * **JS Task:** Add tasks to the list, mark them completed when clicked, and optionally remove them.
+
+8. **Accordion**
+
+   * **HTML:** Multiple sections with headers.
+   * **JS Task:** Clicking a header toggles the visibility of its content while hiding other sections.
+
+9. **Image Slider**
+
+   * **HTML:** A container with an image and next/previous buttons.
+   * **JS Task:** Clicking buttons cycles through an array of images.
+
+---
+
+### **Challenge Level**
+
+10. **Form Validation**
+
+    * **HTML:** Form with name, email, password fields.
+    * **JS Task:** Validate that name is not empty, email contains `@`, password is at least 6 characters. Show error messages dynamically.
+
+11. **Drag and Drop**
+
+    * **HTML:** Two divs.
+    * **JS Task:** Drag an element from one div to the other.
+
+12. **Theme Switcher**
+
+    * **HTML:** Toggle button.
+    * **JS Task:** Switch between light mode and dark mode by changing classes on the `<body>`.
+
+13. **Modal Popup**
+
+    * **HTML:** Button to open a modal and modal content.
+    * **JS Task:** Clicking the button opens the modal, clicking the close icon closes it.
+
+14. **Filter Table Data**
+
+    * **HTML:** Table with rows and an input box.
+    * **JS Task:** Filter rows dynamically based on the input text.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+🔥 That’s awesome — if you’ve already completed all of those, you’re ready for the **next level** of DOM + JavaScript practice!
+Here’s a fresh set of **new project-style tasks** (mix of beginner → advanced) that involve **HTML + CSS + JS**.
+
+---
+
+## 🚀 **More Practice Projects**
+
+### 1. **Character Counter**
+
+* **HTML**: Textarea + a small counter display.
+* **JS Task**: Show live count of characters as the user types. If it exceeds 200, turn the counter red.
+
+---
+
+### 2. **Image Gallery with Modal**
+
+* **HTML**: A grid of thumbnail images.
+* **JS Task**: When a thumbnail is clicked, open a larger version in a modal popup with a close button.
+
+---
+
+### 3. **Password Strength Checker**
+
+* **HTML**: Password input field.
+* **JS Task**: As the user types, display strength ("Weak", "Medium", "Strong") based on rules (length, numbers, special chars).
+
+---
+
+### 4. **Stopwatch**
+
+* **HTML**: Display area + Start, Stop, Reset buttons.
+* **JS Task**: Implement a functional stopwatch with milliseconds.
+
+---
+
+### 5. **Tabs Component**
+
+* **HTML**: Three tab buttons + three sections of content.
+* **JS Task**: Show only the active tab’s content when its button is clicked.
+
+---
+
+### 6. **Search Filter (Live Search)**
+
+* **HTML**: Input + list of items.
+* **JS Task**: Filter the list dynamically as the user types.
+
+---
+
+### 7. **Scroll-to-Top Button**
+
+* **HTML**: Long page with content + a hidden "⬆️ Back to Top" button.
+* **JS Task**: Show the button only when the user scrolls down; clicking it scrolls smoothly to the top.
+
+---
+
+### 8. **BMI Calculator**
+
+* **HTML**: Inputs for height & weight + a button.
+* **JS Task**: Calculate BMI and display the result with a health category (Underweight, Normal, Overweight, Obese).
+
+---
+
+### 9. **Random Quote Generator**
+
+* **HTML**: A display area + "New Quote" button.
+* **JS Task**: Show a random quote from an array each time the button is clicked.
+
+---
+
+### 10. **Weather App (Basic)**
+
+* **HTML**: Input field for city name + button.
+* **JS Task**: Fetch weather data from an API (like OpenWeather) and display temperature & conditions.
+
+---
+
+✨ These are **slightly more advanced** because they mix:
+
+* DOM manipulation
+* Event handling
+* Some external data (APIs)
+* Real-world UI components
+
+---
+
+Would you like me to **pick 5 from this list and give you ready-to-run code (HTML+CSS+JS)** like I did before? That way you can jump straight into practicing instead of setting up from scratch.

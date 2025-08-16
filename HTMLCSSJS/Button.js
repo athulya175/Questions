@@ -243,3 +243,237 @@ form.addEventListener("submit",function(event){
         })
     })
 */
+
+
+
+/*
+let inputvalue=document.getElementById("input")
+let searchid=document.getElementById("searchid")
+let tablevalue=document.querySelectorAll("td")
+let unorderd=document.querySelector(".unorderd")
+searchid.addEventListener("click",()=>{
+    let searched=inputvalue.value
+    tablevalue.forEach(td => {
+        let values=td.textContent.toLocaleLowerCase()
+       let searched=inputvalue.value.toLocaleLowerCase()
+       if(values===searched){
+        td.parentElement.style.backgroundColor="yellow"
+        let li=document.createElement("li")
+        li.textContent=td.parentElement.textContent
+        console.log(td.parentElement)
+       unorderd.appendChild(li)
+       }  
+    });    
+})
+*/
+
+
+/****************************************************************************************/
+
+/*
+    const text=document.getElementById("text")
+    const count=document.getElementById("count")
+    const limit=document.getElementById("limit")
+    text.addEventListener("input",()=>{
+        let textvalue= text.value
+        count.textContent=`${textvalue.length-1}/200`
+        if(textvalue.length>200){
+            text.value=textvalue.substring(0,200)
+            limit.textContent="You can only enter 200 Words"
+        }
+        else{
+            limit.textContent=""
+        }
+    })
+*/
+
+/*
+    const images=document.querySelectorAll("img")
+    images.forEach(img => {
+    img.addEventListener("click",()=>{
+        const modebox=document.createElement("div")
+        modebox.id="modelbx"
+        modebox.innerHTML=`
+        <div class=imagefull>
+        <img src="${img.src}">
+        <button class="close">X</button>
+        </div>
+        `
+        document.body.appendChild(modebox)
+        let close=document.querySelector(".close")
+        close.addEventListener("click",()=>{
+            modebox.remove()
+        })
+    }) 
+    });
+*/
+
+
+/*
+    const invalue=document.getElementById("inputid")
+    const btn=document.querySelector(".btn")
+    let strength=document.querySelector(".strength")
+    const spl=/[!@#$%^&*()_+]/
+
+    invalue.addEventListener("input",()=>{
+        let values=invalue.value
+        if((values.length>10)&&(spl.test(values))){
+            strength.textContent="Its a strong one💪"
+            
+        }else if((values.length>6)&&(values.length<=10)){
+            strength.textContent="Its a medium 🙂(add special chars to make stronger)"
+            
+        }else{
+            strength.textContent="Its a weak one 😢"
+        
+        }
+        btn.addEventListener("click",()=>{
+            strength.textContent=""
+            invalue.value=""
+        })
+        
+    })
+*/
+
+
+/*
+    const btn1=document.getElementById("btn1")
+    const btn2=document.getElementById("btn2")
+    const btn3=document.getElementById("btn3")
+    const content=document.querySelector(".content")
+    const p1=document.getElementById("p1")
+    const p2=document.getElementById("p2")
+    const p3=document.getElementById("p3")
+    function hideAll(){
+        p1.style.display="none"
+        p2.style.display="none"
+        p3.style.display="none"
+    }
+    btn1.addEventListener("click",()=>{
+        hideAll()
+        p1.style.display="block"
+    })
+    btn2.addEventListener("click",()=>{
+        hideAll()
+        p2.style.display="block"
+    })
+    btn3.addEventListener("click",()=>{
+        hideAll()
+        p3.style.display="block"
+    })
+*/
+
+
+
+/*
+    const Showtime=document.querySelector(".Showtime")
+    const start=document.getElementById("start")
+    const stop=document.getElementById("stop")
+    const reset=document.getElementById("reset")
+    let intervel
+    let starttime
+    start.addEventListener("click",()=>{
+        starttime =new Date()
+        intervel=setInterval(()=>{
+        let difference=Date.now()-starttime
+        let millisecds=Math.floor((difference%1000)/10)
+        let seconds=Math.floor((difference/1000)%60)
+        let minutes=Math.floor((difference/60000)%60)
+        let hours=Math.floor(difference/3600000)
+
+        let display=
+        String(hours).padStart(2,"0")+":"+
+        String(minutes).padStart(2,"0")+":"+
+        String(seconds).padStart(2,"0")+":"+
+        String(millisecds).padStart(2,"0")
+        Showtime.textContent=display
+
+    },100)
+    })
+    stop.addEventListener("click",()=>{
+        clearInterval(intervel)
+    })
+    reset.addEventListener("click",()=>{
+        clearInterval(intervel)
+        Showtime.textContent="00:00:00:00"
+    })
+
+*/
+
+
+
+/*
+    const text=document.getElementById("text")
+    const lists=document.querySelectorAll("li")
+
+    text.addEventListener("input",()=>{
+        let texts=text.value.toLowerCase()
+        lists.forEach(li => {
+            let lst=li.textContent.toLocaleLowerCase()
+            if(lst.includes(texts)){
+                li.style.display="block"
+            }
+            else{
+                li.style.display="none"
+            }
+        });
+    
+        
+    })
+*/
+
+
+
+/*
+    const overlay=document.querySelector(".seven")
+    const btn=document.querySelector(".up")
+    btn.style.display="none"
+    overlay.addEventListener("scroll",()=>{
+        if(overlay.scrollTop>200){
+            btn.style.display="block"
+        }
+        else{
+            btn.style.display="none"
+        }
+        btn.addEventListener("click",()=>{
+            overlay.scrollTop=0
+        })
+
+    })
+*/
+
+
+/*
+    const weight=document.getElementById("weight")
+    const height=document.getElementById("height")
+    const btn=document.querySelector(".btn")
+    const result=document.querySelector(".result")
+    btn.addEventListener("click",()=>{
+        let vweight=weight.value
+        let vheight=height.value
+        let bmi=vweight/(vheight)**2
+        console.log(bmi)
+        console.log(vweight)
+        console.log(vheight)
+        if(bmi<18.5){
+            result.textContent="Low weight for height"
+        }
+        else if((bmi>18.5)&&(bmi<24.9))
+            result.textContent="Healthy Weight"
+        else if((bmi>25)&&(bmi>29.9))
+            result.textContent="Higher than normal weight"
+        else if(bmi>=30)
+            result.textContent="High risk of weight-related health issues"
+        else
+            result.textContent="Enter correct weight or height"
+    })
+*/
+
+let quotes=[{
+    quo:"Be yourself;everyone else is already taken",
+    auth:"Oscar Wilde"
+},
+{
+    quo:"I'm Selfish,impatient and a little insecure.I make mistakes,I am out of control and at times hard to handle.But if you can't handle me at"
+}
+]
