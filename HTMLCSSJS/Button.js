@@ -179,3 +179,67 @@ form.addEventListener("submit",function(event){
         email.setCustomValidity("Email must contain '@'")
     }
 */
+
+
+
+/*
+    let lists=document.querySelectorAll(".list")
+    let rytbox=document.querySelector(".right")
+    let lftbox=document.querySelector(".left")
+    for(list of lists){
+        list.addEventListener("dragstart",function(e){
+            let selected=e.target
+            lftbox.addEventListener("dragover",function(e){
+                e.preventDefault()
+            })
+            lftbox.addEventListener("drop",function(e){
+                lftbox.appendChild(selected)
+                selected=null
+            })
+            rytbox.addEventListener("dragover",function(e){
+                e.preventDefault()
+            })
+            rytbox.addEventListener("drop",function(e){
+                rytbox.appendChild(selected)
+                selected=null
+            })
+        })
+    }
+*/
+
+
+/*
+    const dark = document.getElementById("night")
+    const light=document.getElementById("light")
+    const bg =document.querySelector(".content")
+    dark.addEventListener("click",()=>{
+        console.log("click")
+            bg.style.backgroundColor="#0b0423"
+            bg.style.color="white"
+    })
+    light.addEventListener("click",function(){
+        bg.style.backgroundColor=" lightgray"
+        bg.style.color="black"
+    })
+*/
+
+
+/*
+    const btn=document.querySelector(".model")
+    btn.addEventListener("click",()=>{
+        const maincnt=document.createElement("div")
+        maincnt.id="maindiv"
+        maincnt.innerHTML=`
+        <div class="container">
+            <h1>doloribus</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <button class="okbtn">OK</button>
+        </div>
+        `
+        document.body.appendChild(maincnt)
+        let okbtn=document.querySelector(".okbtn")
+        okbtn.addEventListener("click",()=>{
+            maincnt.remove()
+        })
+    })
+*/
