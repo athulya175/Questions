@@ -522,21 +522,46 @@
         margin-left: 100px;
     }
 */
-body{
-    padding-top: 30px;
-}
-.gen{
-    margin-left: 150px;
-    padding: 12px;
-    border-radius: 5px;
-    border: 1px solid;
-    cursor: pointer;
-}
-.allquote{
-    padding: 24px;
-    margin-left: 80px;
-}
-.author{
-    position: absolute;
-    right: 0;
-}
+
+/*
+    body{
+        padding: 0;
+        margin: 0;
+    }
+    .gen{
+        margin-left: 50%;
+        padding: 12px;
+        border-radius: 5px;
+        border: 1px solid;
+        cursor: pointer;
+    }
+    .gen:hover{
+        background-color: lightblue;
+    }
+    .allquote{
+        padding: 24px;
+        margin-left: 80px;
+        float: right;
+    }
+    .author{
+        position: absolute;
+        right: 0;
+    }
+    .nine{
+        background-color: whitesmoke;
+        
+        width: 100%;
+        height: 500px;
+        border: 1px solid black;
+    }
+    .clk{
+        padding-top: 50px;
+    }
+    .author{
+        padding-top:30px;
+        color: red;
+    }
+    .allquote{
+        padding-top: 100px;
+    }
+*/

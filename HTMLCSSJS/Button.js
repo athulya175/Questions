@@ -469,70 +469,151 @@ searchid.addEventListener("click",()=>{
     })
 */
 
-let quotes=[{
-    quo:"Be yourself;everyone else is already taken",
-    auth:"Oscar Wilde"
-},
-{
-    quo:"I'm Selfish,impatient and a little insecure.I make mistakes,I am out of control and at times hard to handle.But if you can't handle me at my worst,then you syre as hell don't deserve me at my best",
-    auth:"Marilyn Monore"
-},
-{
-    quo:"So many books,so little time",
-    auth:"Frank Zappa"
-},
-{
-    quo:"Two things  are infinite:the universe and human stupidity;and i'm not sure about the universe",
-    auth:"Albert Einstein"
-},
-{
-    quo:"A room without bookd is like a body without a soul",
-    auth:"Marcus Tullis cicero"
-},
-{
-    quo:"Be who you are and say what you feels,because those who mind don't matter,and those eho matter don't mind",
-    auth:"Bernard M.Baruch"
-},
-{
-    quo:"You've gotta dance like there's nobody watching,Love like you'll never be hurt,Sing like there's nobody listening,And live like it's heaven on earth.",
-    auth:"William W.Purkey"
-},
-{
-    quo:"You know you're in love when you can't fall asleep because reality is finally better than your dreams.",
-    auth:"Dr.Seuss"
-},
-{
-    quo:"You only live once, but if you do it right, once is enough.",
-    auth:"Mae West"
-},
-{
-    quo:"Be the change that you wish to see in the world.",
-    auth:"Mahatma Gandhi"
-},
-{
-    quo:"In three words I can sum up everything I've learned about life: it goes on.",
-    auth:" Robert Frost"
-},
-{
-    quo:"If you want to know what a man's like, take a good look at how he treats his inferiors, not his equals.",
-    auth:" J.K. Rowling, Harry Potter and the Goblet of Fire"
-},
-{
-    quo:"Don’t walk in front of me… I may not followDon’t walk behind me… I may not leadWalk beside me… just be my friend",
-    auth:" Albert Camus"
-},
-{
-    quo:"If you tell the truth, you don't have to remember anything.",
-    auth:" Mark Twain"
 
-},
-{
-    quo:"I've learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.",
-    auth:" Maya Angelou"
-},
-{
-    quo:"Friendship ... is born at the moment when one man says to another What! You too? I thought that no one but myself . . .",
-    auth:"C.S. Lewis, The Four Loves"
-}
+/*
+    let quotes=[{
+        quo:`"Be yourself;everyone else is already taken"`,
+        auth:"-Oscar Wilde"
+    },
+    {
+        quo:`"I'm Selfish,impatient and a little insecure.I make mistakes,I am out of control and at times hard to handle.But if you can't handle me at my worst,then you syre as hell don't deserve me at my best"`,
+        auth:"-Marilyn Monore"
+    },
+    {
+        quo:`"So many books,so little time"`,
+        auth:"-Frank Zappa"
+    },
+    {
+        quo:`"Two things  are infinite:the universe and human stupidity;and i'm not sure about the universe"`,
+        auth:"-Albert Einstein"
+    },
+    {
+        quo:`"A room without bookd is like a body without a soul"`,
+        auth:"-Marcus Tullis cicero"
+    },
+    {
+        quo:`"Be who you are and say what you feels,because those who mind don't matter,and those eho matter don't mind"`,
+        auth:"-Bernard M.Baruch"
+    },
+    {
+        quo:`"You've gotta dance like there's nobody watching,Love like you'll never be hurt,Sing like there's nobody listening,And live like it's heaven on earth."`,
+        auth:"-William W.Purkey"
+    },
+    {
+        quo:`"You know you're in love when you can't fall asleep because reality is finally better than your dreams."`,
+        auth:"-Dr.Seuss"
+    },
+    {
+        quo:`"You only live once, but if you do it right, once is enough."`,
+        auth:"-Mae West"
+    },
+    {
+        quo:`"Be the change that you wish to see in the world."`,
+        auth:"-Mahatma Gandhi"
+    },
+    {
+        quo:`"In three words I can sum up everything I've learned about life: it goes on."`,
+        auth:" -Robert Frost"
+    },
+    {
+        quo:`"If you want to know what a man's like, take a good look at how he treats his inferiors, not his equals."`,
+        auth:" -J.K. Rowling, Harry Potter and the Goblet of Fire"
+    },
+    {
+        quo:`"Don’t walk in front of me… I may not followDon’t walk behind me… I may not leadWalk beside me… just be my friend"`,
+        auth:" -Albert Camus"
+    },
+    {
+        quo:`"If you tell the truth, you don't have to remember anything."`,
+        auth:" -Mark Twain"
 
-]
+    },
+    {
+        quo:`"I've learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel."`,
+        auth:" -Maya Angelou"
+    },
+    {
+        quo:`"Friendship ... is born at the moment when one man says to another What! You too? I thought that no one but myself . . ."`,
+        auth:"-C.S. Lewis, The Four Loves"
+    }
+
+    ]
+
+
+    const quote=document.querySelector(".quotes")
+    const author=document.querySelector(".author")
+    console.log(quotes.length)
+    const btn=document.querySelector(".gen")
+    btn.addEventListener("click",()=>{
+        let index=Math.floor(Math.random()*quotes.length)+1
+        quote.textContent=quotes[index].quo
+        author.textContent=quotes[index].auth
+    })
+*/
+
+
+    //Some propblem related to map
+/*
+    let arry=document.getElementById("arry")
+    let nums=[1,2,3,4,5]
+    let square=nums.map(x=>x*2)
+    arry.textContent=square
+*/
+
+/*
+    let nums1=[10,20,30]
+    console.log(nums1)
+   let string=nums1.map(x=>x.toString())
+   console.log(string)
+
+*/
+
+/*
+    let nums1=[10,20,25]
+    let addfive=nums1.map(x=>x+5)
+    console.log(addfive)
+*/
+
+/*
+    let words=["apple","Orange","banana"]
+    let caps=words.map(x=>x.toUpperCase())
+    console.log(caps)
+*/
+
+/*
+    let words=["h1","hello","world"]
+    let wordlength=words.map(x=>x.length)
+    console.log(wordlength)
+*/
+
+/*
+    let users=[
+        {name:"Alice",age:20},
+        {name:"Bob",age:25},
+        {name:"Charlie",age:30}
+    ]
+
+    let names=users.map(x=>x.name)
+    console.log(names)
+*/
+
+
+
+/*
+    let arry=document.getElementById("arry")
+    let arr=[[1,2],[3,4],[5]]
+    let single=arr.map(x=>x)
+    arry.textContent=single
+*/
+
+/*
+    let words=['JavaScript','Map','Problems']
+    let firstletter=words.map(x=>x.charAt(0))
+    console.log(firstletter)
+*/
+
+/*
+    let words=["hello","world"]
+    let firstcap=words.map(x=>x.charAt(0).toLocaleUpperCase()+x.slice(1))
+    console.log(firstcap)
+*/
