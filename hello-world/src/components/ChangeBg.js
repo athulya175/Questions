@@ -16,4 +16,4 @@ function ChangeBg(){
         // <div style={{BackgroundColor:}}></div>
     
 }
-export default ChangeBg
+
