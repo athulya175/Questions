@@ -617,3 +617,342 @@ searchid.addEventListener("click",()=>{
     let firstcap=words.map(x=>x.charAt(0).toLocaleUpperCase()+x.slice(1))
     console.log(firstcap)
 */
+
+
+/*
+    const incrm=document.getElementById("incrm")
+    const decrm=document.getElementById("decrm")
+    const para=document.getElementById("para")
+    incrm.addEventListener("click",()=>{
+        let current_font=window.getComputedStyle(para).fontSize
+        current_font=Number(current_font.slice(0,-2))
+        let new_font=current_font+1
+        console.log(new_font)
+        para.style.fontSize=`${new_font}px`
+    })
+    decrm.addEventListener("click",()=>{
+        let current_font=window.getComputedStyle(para).fontSize
+        current_font=Number(current_font.slice(0,-2))
+        let new_font=current_font-1
+        para.style.fontSize=`${new_font}px`
+    })
+*/
+    /*why we use window.getComputedStyle?
+    -->Bcoz we set font size in css, if we directly set font size inside the html then we can console(para.style.fontsize,but here we set it in the css) */
+
+/*
+        let bg=document.getElementById("bg")
+        let btn=document.getElementById("btn")
+        btn.addEventListener("click",()=>{
+            let img=["https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1024px-Image_created_with_a_mobile_phone.png","http://t0.gstatic.com/images?q=tbn:ANd9GcQ30jPvve8TtXiou_QabziSWm1B5SJx5OmcHsF5krieRLehDelBpZrqf2GmF3j3eV3WoqgicwwM","http://t2.gstatic.com/images?q=tbn:ANd9GcTsV_3rJAjA5RJdAdBzoPZczv2IRQ5fLf5aB1gqvXS1J-SGTQWiGzQSm69-2jVw6Px7_4TBDUCH","http://t0.gstatic.com/images?q=tbn:ANd9GcRBMJuzoZaucOrFBczKLl6BJrKFYHkonWsjRWICEH4TYjQ9Sfqh36nUOEVaqrmOjN9mhEXp9BUB","http://t2.gstatic.com/images?q=tbn:ANd9GcRUgEns67LsrCAg_3JUFKo89zBo9GTIb0cbqddFQOLXBDP5qp1vDDdhGxOPs8SiF8YYMnV93LaE"]
+            let i=Math.floor(Math.random()*img.length)+0
+            console.log(i)
+            bg.style.backgroundImage=`url(${img[i]}) `
+            console.log(`${img[i]}`) 
+
+        })
+*/
+
+
+
+/*
+    const inptxt=document.getElementById("inptxt")
+    const btn=document.getElementById("btn")
+    let converts=document.querySelector(".convert")
+    inptxt.addEventListener("click",()=>{
+        converts.textContent=""
+    })
+    btn.addEventListener("click",()=>{
+        let converted=inptxt.value.toUpperCase()
+        converts.textContent=`${converted}`
+        btn.style.backgroundColor="green"
+        setInterval(()=>{
+            btn.style.backgroundColor=""
+        },2000)
+        inptxt.textContent="" 
+    })
+*/
+
+
+
+/* .value only works for form element (input,texxtarea,select  and they dont works on <div>,<p>,<span>) */
+
+
+/*
+    let like=document.getElementById("like")
+    let unlike=document.getElementById("unlike")
+    let txt=document.querySelector(".txt")
+    like.style.display="none"
+
+        unlike.addEventListener("click",()=>{
+            like.style.display="block"
+            unlike.style.display="none"
+            txt.textContent="Thanks for your like"
+        })
+        like.addEventListener("click",()=>{
+            console.log("hello")
+            like.style.display="none"
+            unlike.style.display="block"
+            txt.textContent="Hit's The Like Button"
+        })
+
+    unlike.addEventListener("click",()=>{
+        console.log("hey")
+        like.style.display="block"
+        unlike.style.display="none"
+    })
+*/
+
+/*************************Intermediate***********************/
+
+
+/*
+    const btn=document.getElementById("increase")
+    const progressbar=document.querySelector(".progressbar")
+    const layout=document.querySelector(".layout")
+    const rslt=document.querySelector(".rslt")
+
+    btn.addEventListener("click",()=>{
+    let current=window.getComputedStyle(progressbar).width
+    let total=window.getComputedStyle(layout).width
+    
+        total=Number(total.slice(0,-2))
+
+        console.log(total)
+    let values=Number(current.slice(0,-2))
+    let newval=Math.floor(values+(values/10))
+    console.log(newval)
+    if(newval>total){
+        newval=total
+        console.log(`if${newval}`)
+        progressbar.style.width=`${newval}px`
+        rslt.textContent="100% Completd"
+    }
+    else{
+        progressbar.style.width=`${newval}px`
+        rslt.textContent=`Loading...`
+    }  
+    })
+*/
+
+/*
+    const inp=document.getElementById("inp")
+    const result=document.querySelector(".result")
+    const btn=document.getElementById("btn")
+    const start=document.getElementById("strt")
+    let rndm
+    function randomGen(){
+    rndm=Math.floor(Math.random()*100)+1
+    return rndm
+    
+    }
+    btn.addEventListener("click",()=>{
+        start.textContent="Replay"
+        let inpvalue=Number(inp.value)
+        console.log(` inp${inpvalue}`)
+        console.log(`rndm${rndm}`)
+        if(inpvalue===rndm){
+            result.textContent="its correct 🥳"
+        }else if(inpvalue<rndm){
+            result.textContent="Too Low 🙂"
+        }
+        else{
+            result.textContent="Too High 🙃"
+        }
+    })
+    start.addEventListener("click",()=>{
+        randomGen()
+        console.log(rndm)
+    })
+*/
+
+/*
+    const btn=document.getElementById("hamb")
+    const list=document.querySelector(".undorder")
+    btn.addEventListener("click",()=>{
+        if(list.style.display==="block"){
+            list.style.display="none"
+        }else{
+            list.style.display="block"
+        }
+    })
+*/
+
+/*
+    const navbar=document.querySelector(".navbar")
+    navbar.style.position="fixed"
+    navbar.style.top="0"
+*/
+
+
+/*
+    let btn=document.getElementById("start")
+    let text=document.getElementById("sec")
+    let inp=document.getElementById("inp")
+    btn.addEventListener("click",()=>{
+        let value=inp.value
+    let timer= setInterval(()=>{
+            value=value-1
+            console.log(typeof(value))
+            if(value===0){
+                text.textContent="Time's up!"
+                clearInterval(timer)
+                return
+            }else{
+            text.textContent=`${value} Sec`
+            }
+            console.log(value)
+        },1000)
+        inp.value=""
+    })
+*/
+
+
+
+/*
+    let image=document.getElementById("images")
+    image.addEventListener("mouseover",()=>{
+        image.style.transform=`scale(1.5)`
+    })
+    image.addEventListener("mouseleave",()=>{
+        image.style.transform=`scale(1)`
+    })
+*/
+
+const questions=[
+    {
+        question:"What is the capital of France?",
+        answers:[
+            {option:"Madrid",correct:false},
+            {option:"Paris",correct:true},
+            {option:"Rome",correct:false},
+            {option:"Berlin",correct:false}
+         ]
+    },
+    {
+        question:`Who is known as the "Father of Computers"? `,
+        answers:[
+            {option:"Charles Babbage",correct:true},
+            {option:"Alan Turing",correct:false},
+            {option:"Bill Gates",correct:false},
+            {option:"Steve Jobs",correct:false}
+        ]
+    },
+    {
+        question:`Which planent is known as "Red Planet"?`,
+        answers:[
+            {option:"Earth",correct:false},
+            {option:"Venus",correct:false},
+            {option:"Mars",correct:true},
+            {option:"Jupiter",correct:false}
+        ]
+    },
+    {
+        question:'What is the  chemical symbol for water?',
+        answers:[
+            {option:"O₂",correct:false},
+            {option:"H₂O",correct:true},
+            {option:"CO₂",correct:false},
+            {option:"HO",continue:false}
+        ]
+    },
+    {
+        question:"Which is the largest mamal in the world?",
+        answers:[
+            {option:"Elephant",correct:false},
+            {option:"Blue Whale",correct:true},
+            {option:"Giraffe",correct:false},
+            {option:"Hippopotamus"},
+        ]
+    },
+    {
+        question:"Which symbol is used for commonents in javaScript?",
+        answers:[
+            {option:"<!--comment-->",correct:false},
+            {option:"#comment",correct:false},
+            {option:"//comment",correct:true},
+            {option:"*comment*",correct:false}
+
+        ]
+    },
+    {
+        question:"Which of the following is NOT a javascript data type?",
+        answers:[
+            {option:"String",correct:false},
+            {option:"Number",correct:false},
+            {option:"Boolean",correct:false},
+            {option:"Character",correct:true}
+        ]
+    },
+    {
+        question:"How do you decalrea variable in JavaScript(Es6)?",
+        answers:[
+            {option:"Var",correct:false},
+            {option:"Let",correct:false},
+            {option:"Const",correct:false},
+            {option:"All of the above",correct:true}
+        ]
+    },
+    {
+        question:"What does DOM stand for?",
+        answers:[
+            {option:"Data Object Model",correct:false},
+            {option:"Document Object Model",correct:true},
+            {option:"Digital Object Model",correct:false},
+            {option:"Document Oriented Machine"}
+        ]
+    },
+    {
+        question:"Which operator is used to compare value and types in JavaScript?",
+        answers:[
+            {option:"=",correct:false},
+            {option:"==",correct:false},
+            {option:"===",correct:true},
+            {option:"=>",correct:false}
+        ]
+    }
+]
+const question=document.getElementById("question")
+const ans=document.querySelectorAll(".ans")
+const nxtbtn=document.querySelector(".btn")
+let currentindexqn=0
+let score=0
+
+question.textContent=`${currentindexqn+1}. ${questions[currentindexqn].question}`
+// console.log(`${questions[currentindexqn].answers[currentindexqn].option}`)
+questions[currentindexqn].answers.forEach((x,i)=>{
+    ans[i].textContent=`${x.option}`
+    
+})
+
+// questions.forEach((x,currentindex)=>{
+//     console.log(`${currentindex+1}.${x.question}`)
+// })
+function display(){
+    question.textContent=`${currentindexqn+1}. ${questions[currentindexqn].question}`
+// console.log(`${questions[currentindexqn].answers[currentindexqn].option}`)
+questions[currentindexqn].answers.forEach((x,i)=>{
+    ans[i].textContent=`${x.option}`
+})
+}
+
+nxtbtn.addEventListener("click",()=>{
+    currentindexqn=currentindexqn+1
+    display()
+    userclick()
+})
+function userclick(){
+    questions[currentindexqn].answers.forEach((x,i)=>{
+    ans[i].addEventListener("click",()=>{
+        let userclick=x.option
+        console.log("uclk",userclick)
+        let chk=x.correct
+        console.log(chk)
+        if(chk===true){
+            score=score+1
+            console.log(score)
+        }
+    })
+})
+}
+

@@ -174,3 +174,104 @@ Here’s a fresh set of **new project-style tasks** (mix of beginner → advance
 ---
 
 Would you like me to **pick 5 from this list and give you ready-to-run code (HTML+CSS+JS)** like I did before? That way you can jump straight into practicing instead of setting up from scratch.
+
+
+
+-----------------------------New Sections--------------------
+🌱 Beginner
+
+Font Size Changer
+
+HTML: A paragraph + two buttons (+, –).
+
+JS: Increase/decrease the font size of the paragraph.
+
+Background Image Switcher
+
+HTML: Button(s).
+
+JS: On click, change the page background image.
+
+Uppercase Converter
+
+HTML: Input box + button.
+
+JS: On click, show the input text in uppercase below.
+
+Simple Like Button
+
+HTML: Button with 👍.
+
+JS: Toggle between “Like” and “Unlike” text when clicked.
+
+🌿 Intermediate
+
+Progress Bar
+
+HTML: A div styled as progress bar.
+
+JS: On button click, increase width by 10% until full.
+
+Random Number Guessing Game
+
+HTML: Input box + submit button.
+
+JS: Generate a random number (1–100). User guesses; show "Too high", "Too low", or "Correct".
+
+Dropdown Menu
+
+HTML: A nav with hidden menu.
+
+JS: On click, toggle the dropdown visibility.
+
+Sticky Navbar on Scroll
+
+HTML: Navbar + content.
+
+JS: Make navbar stick to top when scrolling.
+
+Countdown Timer
+
+HTML: Input for seconds + start button.
+
+JS: Show countdown; when reaches 0, display "Time’s up!".
+
+🌳 Advanced
+
+Image Zoom on Hover
+
+HTML: Image.
+
+CSS: Basic styling.
+
+JS: On hover, zoom in smoothly; on leave, zoom out.
+
+Quiz App (MCQ)
+
+HTML: Questions + options.
+
+JS: Select answer, go to next question, show score at the end.
+
+Form Auto-Save
+
+HTML: Form with input fields.
+
+JS: Save input data to localStorage as user types; restore on reload.
+
+Scroll Progress Indicator
+
+HTML: Page with long content.
+
+JS: Show a progress bar at the top indicating how much of the page is scrolled.
+
+Theme Customizer
+
+HTML: Color pickers for background, text, and buttons.
+
+JS: Apply selected styles live to the page.
+
+Keyboard Events Game
+
+HTML: A box on the screen.
+
+JS: Move the box using arrow keys (⬅️ ➡️ ⬆️ ⬇️).
