@@ -275,3 +275,145 @@ Keyboard Events Game
 HTML: A box on the screen.
 
 JS: Move the box using arrow keys (⬅️ ➡️ ⬆️ ⬇️).
+
+
+/**********************Section 3********************************/
+Beginner Level
+
+Random Background Color
+
+HTML: Button
+
+JS Task: On click, change the page background to a random color.
+
+Image Hover Zoom
+
+HTML: Image
+
+CSS: Add a hover effect that slightly enlarges the image.
+
+JS Task: On click, show a message with the image name.
+
+Simple Calculator
+
+HTML: Two input fields, buttons for +, -, *, /
+
+JS Task: Display the result below when an operation is clicked.
+
+Character Counter
+
+HTML: Textarea + counter span
+
+JS Task: Show live character count as user types.
+
+Show/Hide Password
+
+HTML: Password input + checkbox
+
+JS Task: When checkbox is checked, show password; otherwise hide.
+
+
+
+
+
+Intermediate Level
+
+Color Palette
+
+HTML: Several colored divs
+
+JS Task: Clicking a color changes the background of a main container.
+
+To-Do List with Delete
+
+HTML: Input + Add button + List
+
+JS Task: Add items to the list, and add a delete button for each item.
+
+Image Carousel
+
+HTML: Image container + Next/Previous buttons
+
+JS Task: Cycle through an array of images on button click.
+
+Dropdown Filter
+
+HTML: Select dropdown + List of items
+
+JS Task: Show only the items that match the selected category.
+
+Random Quote Generator
+
+HTML: Display area + button
+
+JS Task: Show a random quote from an array each time the button is clicked.
+
+
+
+
+Advanced Level
+
+Light/Dark Mode Toggle
+
+HTML: Toggle button
+
+JS Task: Switch the page between light and dark themes by adding/removing classes.
+
+BMI Calculator
+
+HTML: Inputs for weight & height + button
+
+JS Task: Calculate BMI and display category (Underweight, Normal, Overweight, Obese).
+
+Stopwatch
+
+HTML: Display + Start, Stop, Reset buttons
+
+JS Task: Implement a stopwatch counting seconds and minutes.
+
+Form Validation
+
+HTML: Form with Name, Email, Password
+
+JS Task: Validate fields (not empty, email contains @, password ≥ 6 chars) and show errors.
+
+Scroll-to-Top Button
+
+HTML: Long page content + button
+
+JS Task: Show button only when scrolling down; click scrolls smoothly to top.
+
+
+
+
+Challenge Projects
+
+Drag and Drop
+
+HTML: Two containers with draggable items
+
+JS Task: Move items between containers using drag & drop.
+
+Memory Card Game
+
+HTML: Grid of hidden cards
+
+JS Task: Reveal cards on click, match pairs to win.
+
+Weather App (API)
+
+HTML: Input for city + button + display area
+
+JS Task: Fetch weather data from an API and display temperature & condition.
+
+Typing Speed Test
+
+HTML: Paragraph + input field
+
+JS Task: Measure typing speed and show WPM (words per minute).
+
+Progress Bar on Scroll
+
+HTML: Long content + bar at top
+
+JS Task: Fill progress bar based on how much page has been scrolled.

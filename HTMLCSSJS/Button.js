@@ -1,5 +1,7 @@
 //*****************************Beginner Level*************************** */
 
+
+
 /*
     //Problem-1
     let container =document.querySelector(".container")
@@ -819,140 +821,342 @@ searchid.addEventListener("click",()=>{
     })
 */
 
-const questions=[
-    {
-        question:"What is the capital of France?",
-        answers:[
-            {option:"Madrid",correct:false},
-            {option:"Paris",correct:true},
-            {option:"Rome",correct:false},
-            {option:"Berlin",correct:false}
-         ]
-    },
-    {
-        question:`Who is known as the "Father of Computers"? `,
-        answers:[
-            {option:"Charles Babbage",correct:true},
-            {option:"Alan Turing",correct:false},
-            {option:"Bill Gates",correct:false},
-            {option:"Steve Jobs",correct:false}
-        ]
-    },
-    {
-        question:`Which planent is known as "Red Planet"?`,
-        answers:[
-            {option:"Earth",correct:false},
-            {option:"Venus",correct:false},
-            {option:"Mars",correct:true},
-            {option:"Jupiter",correct:false}
-        ]
-    },
-    {
-        question:'What is the  chemical symbol for water?',
-        answers:[
-            {option:"O₂",correct:false},
-            {option:"H₂O",correct:true},
-            {option:"CO₂",correct:false},
-            {option:"HO",continue:false}
-        ]
-    },
-    {
-        question:"Which is the largest mamal in the world?",
-        answers:[
-            {option:"Elephant",correct:false},
-            {option:"Blue Whale",correct:true},
-            {option:"Giraffe",correct:false},
-            {option:"Hippopotamus"},
-        ]
-    },
-    {
-        question:"Which symbol is used for commonents in javaScript?",
-        answers:[
-            {option:"<!--comment-->",correct:false},
-            {option:"#comment",correct:false},
-            {option:"//comment",correct:true},
-            {option:"*comment*",correct:false}
 
-        ]
-    },
-    {
-        question:"Which of the following is NOT a javascript data type?",
-        answers:[
-            {option:"String",correct:false},
-            {option:"Number",correct:false},
-            {option:"Boolean",correct:false},
-            {option:"Character",correct:true}
-        ]
-    },
-    {
-        question:"How do you decalrea variable in JavaScript(Es6)?",
-        answers:[
-            {option:"Var",correct:false},
-            {option:"Let",correct:false},
-            {option:"Const",correct:false},
-            {option:"All of the above",correct:true}
-        ]
-    },
-    {
-        question:"What does DOM stand for?",
-        answers:[
-            {option:"Data Object Model",correct:false},
-            {option:"Document Object Model",correct:true},
-            {option:"Digital Object Model",correct:false},
-            {option:"Document Oriented Machine"}
-        ]
-    },
-    {
-        question:"Which operator is used to compare value and types in JavaScript?",
-        answers:[
-            {option:"=",correct:false},
-            {option:"==",correct:false},
-            {option:"===",correct:true},
-            {option:"=>",correct:false}
-        ]
+/*
+    const questions=[
+        {
+            question:"What is the capital of France?",
+            answers:[
+                {option:"Madrid",correct:false},
+                {option:"Paris",correct:true},
+                {option:"Rome",correct:false},
+                {option:"Berlin",correct:false}
+            ]
+        },
+        {
+            question:`Who is known as the "Father of Computers"? `,
+            answers:[
+                {option:"Charles Babbage",correct:true},
+                {option:"Alan Turing",correct:false},
+                {option:"Bill Gates",correct:false},
+                {option:"Steve Jobs",correct:false}
+            ]
+        },
+        {
+            question:`Which planent is known as "Red Planet"?`,
+            answers:[
+                {option:"Earth",correct:false},
+                {option:"Venus",correct:false},
+                {option:"Mars",correct:true},
+                {option:"Jupiter",correct:false}
+            ]
+        },
+        {
+            question:'What is the  chemical symbol for water?',
+            answers:[
+                {option:"O₂",correct:false},
+                {option:"H₂O",correct:true},
+                {option:"CO₂",correct:false},
+                {option:"HO",continue:false}
+            ]
+        },
+        {
+            question:"Which is the largest mamal in the world?",
+            answers:[
+                {option:"Elephant",correct:false},
+                {option:"Blue Whale",correct:true},
+                {option:"Giraffe",correct:false},
+                {option:"Hippopotamus"},
+            ]
+        },
+        {
+            question:"Which symbol is used for commonents in javaScript?",
+            answers:[
+                {option:"<!--comment-->",correct:false},
+                {option:"#comment",correct:false},
+                {option:"//comment",correct:true},
+                {option:"*comment*",correct:false}
+
+            ]
+        },
+        {
+            question:"Which of the following is NOT a javascript data type?",
+            answers:[
+                {option:"String",correct:false},
+                {option:"Number",correct:false},
+                {option:"Boolean",correct:false},
+                {option:"Character",correct:true}
+            ]
+        },
+        {
+            question:"How do you decalrea variable in JavaScript(Es6)?",
+            answers:[
+                {option:"Var",correct:false},
+                {option:"Let",correct:false},
+                {option:"Const",correct:false},
+                {option:"All of the above",correct:true}
+            ]
+        },
+        {
+            question:"What does DOM stand for?",
+            answers:[
+                {option:"Data Object Model",correct:false},
+                {option:"Document Object Model",correct:true},
+                {option:"Digital Object Model",correct:false},
+                {option:"Document Oriented Machine"}
+            ]
+        },
+        {
+            question:"Which operator is used to compare value and types in JavaScript?",
+            answers:[
+                {option:"=",correct:false},
+                {option:"==",correct:false},
+                {option:"===",correct:true},
+                {option:"=>",correct:false}
+            ]
+        }
+    ]
+    const question=document.getElementById("question")
+    const ans=document.querySelectorAll(".ans")
+    const nxtbtn=document.querySelector(".btn")
+    const layout=document.querySelector(".quiz")
+    const container=document.querySelector(".container")
+    const answers=document.getElementById("answers")
+    let currentindexqn=0
+    let score=0
+    // console.log("total",questions.length)
+    // question.textContent=`${currentindexqn+1}. ${questions[currentindexqn].question}`
+    // // console.log(`${questions[currentindexqn].answers[currentindexqn].option}`)
+    // questions[currentindexqn].answers.forEach((x,i)=>{
+    //     ans[i].textContent=`${x.option}`
+        
+    // })
+
+    // questions.forEach((x,currentindex)=>{
+    //     console.log(`${currentindex+1}.${x.question}`)
+    // })
+    // answers.style.display="none"
+    function display(){
+        question.textContent=`${currentindexqn+1}. ${questions[currentindexqn].question}`
+    // console.log(`${questions[currentindexqn].answers[currentindexqn].option}`)
+    questions[currentindexqn].answers.forEach((x,i)=>{
+        ans[i].textContent=`${x.option}`
+    })
     }
-]
-const question=document.getElementById("question")
-const ans=document.querySelectorAll(".ans")
-const nxtbtn=document.querySelector(".btn")
-let currentindexqn=0
-let score=0
-
-question.textContent=`${currentindexqn+1}. ${questions[currentindexqn].question}`
-// console.log(`${questions[currentindexqn].answers[currentindexqn].option}`)
-questions[currentindexqn].answers.forEach((x,i)=>{
-    ans[i].textContent=`${x.option}`
+    nxtbtn.addEventListener("click",()=>{
+        answers.style.display="block"
     
-})
-
-// questions.forEach((x,currentindex)=>{
-//     console.log(`${currentindex+1}.${x.question}`)
-// })
-function display(){
-    question.textContent=`${currentindexqn+1}. ${questions[currentindexqn].question}`
-// console.log(`${questions[currentindexqn].answers[currentindexqn].option}`)
-questions[currentindexqn].answers.forEach((x,i)=>{
-    ans[i].textContent=`${x.option}`
-})
-}
-
-nxtbtn.addEventListener("click",()=>{
-    currentindexqn=currentindexqn+1
+        // console.log('index',currentindexqn)
+        // console.log(questions.length)
+        if(currentindexqn===questions.length-1){
+            // console.log('qn',currentindexqn)
+            nxtbtn.textContent="submit"
+        layout.style.display="none"
+        let div= document.createElement("div")
+        div.innerHTML=`
+        <div id="score">Score</div>`
+        container.appendChild(div)
+        let scores=document.getElementById("score")
+        scores.textContent=`Your Score is : ${score}/${questions.length}`
+        //  console.log("score",scores)
+        return
+        }else{
+            // console.log(currentindexqn)
+            nxtbtn.textContent="Next"
+        }
+        currentindexqn++
+        display()
+        userclick()
+        
+    })
     display()
     userclick()
-})
-function userclick(){
-    questions[currentindexqn].answers.forEach((x,i)=>{
-    ans[i].addEventListener("click",()=>{
-        let userclick=x.option
-        console.log("uclk",userclick)
-        let chk=x.correct
-        console.log(chk)
-        if(chk===true){
-            score=score+1
-            console.log(score)
+
+    function userclick(){
+        questions[currentindexqn].answers.forEach((x,i)=>{
+        ans[i].onclick=()=>{
+            let userclick=x.option
+            // console.log("uclk",userclick)
+            let chk=x.correct
+            console.log(chk)
+            if(chk===true){
+                score++
+                console.log(score)
+            }
         }
     })
+    }
+    console.log("Score:",score)
+
+*/
+/*
+    const form=document.getElementById("forms")
+    //all are single string
+    const fields=form.querySelectorAll("input,textarea,select")
+
+    //restores saved values
+
+
+    //↓  *waits until the page finishes loading,then we restore any saved data
+    window.addEventListener("load",()=>{
+
+    // ↓ *loops through every x we collected
+        fields.forEach(x=>{
+    // ↓ if this x is a checkbox,handle it as a group(bcoz they have multiple values)
+            if(x.type==="checkbox"){
+    // ↓ Get the saved array of hobbies from localstorage.and also if nothing is saved then use empty array
+                let saved=JSON.parse(localStorage.getItem("hobbies"))||[]
+    // ↓ Mark this checkbox as checked if its  value is in the saved array
+                x.checked=saved.includes(x.value)
+            }
+            else if(x.type==="radio"){
+    // ↓  restore radio groupGet the saved gender string(eg,"Female") from localStorage
+                let saved=localStorage.getItem("gender") 
+    // ↓    If there is a saved value and this radio's value matches it
+                if(saved&&x.value===saved){
+    //  ↓   cjeck this radio
+                    x.checked=true
+                }
+            }
+    //  ↓ For all other fields (text,email,password,textarea,select,date,number)
+            else{
+    //  ↓   read the saved value using the x's id as the key
+                let saved=localStorage.getItem(x.id)
+    // ↓ if a value exists,put it back into the fiels(restore)
+                if(saved!==null){
+                x.value=saved
+                }
+            }
+        })
+    })
+    // save values as user types/selects
+    fields.forEach(x=>{
+        x.addEventListener("input",()=>{
+            if(x.type==="checkbox"){
+                let selected=[]
+                document.querySelectorAll('input[name="hobby"]:checked').forEach(cb=>{
+                    selected.push(cb.value)
+                })
+                localStorage.setItem("hobbies",JSON.stringify(selected))
+            }else if(x.type==="radio"){
+                if(x.checked){
+                    localStorage.setItem("gender",x.value)
+                }
+            }else{
+                localStorage.setItem(x.id,x.value)
+            }
+        })
+    })
+*/
+// to clear this we can use
+        //localStorage.clear()--->this will clear all
+        //localStorage.removeItem("name")  // this will only remove one
+
+
+
+
+/*Same questions without any commants */
+
+/*
+    const form=document.getElementById("forms")
+    const fields=form.querySelectorAll("input,textarea,select")
+
+    //Restore saved values
+    window.addEventListener("load",()=>{
+        fields.forEach(field=>{
+            if(field.type==="checkbox"){
+                let saved =JSON.parse(localStorage.getItem("hobbies"))||[]
+                field.checked=saved.includes(field.value)
+            }else if(field.type==="radio"){
+                //restore radio group
+                let saved=localStorage.getItem("gender")
+                if(saved && field.value===saved){
+                    field.checked=true
+                }
+            }
+            else{
+                //restore normal input/textarea/select
+                let saved=localStorage.getItem(field.id)
+                if(saved!==null){
+                    field.value=saved
+                }
+            }
+        })
+    })
+    fields.forEach(field=>{
+        field.addEventListener("input",()=>{
+            if(field.type==="checkbox"){
+                let selected=[]
+                document.querySelectorAll('input[name="hobby"]checked').forEach(cb=>{
+                    selected.push(cb.value)
+                })
+                localStorage.setItem("hobbies",JSON.stringify(selected))
+            }else if(field.type==="radio"){
+                if(field.checked){
+                    localStorage.setItem("gender",field.value)
+                }
+            }else{
+                localStorage.setItem(field.id,field.value)
+            }
+        })
+    })
+    // localStorage.clear()
+    //localStorage.removeItem("name")
+*/
+/*
+    const scrolls=document.querySelector(".thirteen")
+    const progress=document.querySelector(".progress")
+    window.addEventListener("scroll",()=>{
+        let windowscrl=window.scrollY
+        const maxheight=document.documentElement.scrollHeight-window.innerHeight
+    let result=windowscrl/maxheight*100
+    console.log('res',result)
+        progress.style.width=`${result}%`
+    })
+*/
+
+
+
+/*
+    let colors=["red","pink","orange","green","yellow","black","brown","blue","grey"]
+    const btn=document.getElementById("btn")
+    const bgrd=document.querySelector(".layout")
+    let randomno
+    function random(){
+    randomno=Math.floor(Math.random()*colors.length-1)+0
+        return randomno
+    }
+        btn.addEventListener("click",()=>{
+        random()
+        bgrd.style.backgroundColor=`${colors[randomno]}`
+    })
+    // with out button
+    setInterval(()=>{
+        random()
+        bgrd.style.backgroundColor=`${colors[randomno]}`
+    },2000)
+*/
+
+/*
+    let image=document.getElementById("image")
+    let container=document.querySelector(".container")
+    image.addEventListener("click",()=>{
+        let div=document.createElement("div")
+        div.textContent="This image is related to patters"
+        container.appendChild(div)
+        return
+    })
+*/
+
+let num1=document.getElementById("num1")
+let num2=document.getElementById("num2")
+let plus=document.getElementById("plus")
+let minus=document.getElementById("min")
+let div=document.getElementById("div")
+let mult=document.getElementById("mult")
+let eql=document.getElementById("eql")
+plus.addEventListener("click",()=>{
+    console.log(num1.value)
 })
-}
+
 
