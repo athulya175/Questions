@@ -1148,15 +1148,120 @@ searchid.addEventListener("click",()=>{
     })
 */
 
-let num1=document.getElementById("num1")
-let num2=document.getElementById("num2")
-let plus=document.getElementById("plus")
-let minus=document.getElementById("min")
-let div=document.getElementById("div")
-let mult=document.getElementById("mult")
-let eql=document.getElementById("eql")
-plus.addEventListener("click",()=>{
-    console.log(num1.value)
+// let inputval=document.getElementById("inputval")
+// let clr=document.getElementById("clear")
+// let minus=document.getElementById("minus")
+// let dlt=document.getElementById("dlt")
+// let mult=document.getElementById("mult")
+// let mod=document.getElementById("mod")
+// let plus=document.getElementById("pls")
+// let eql=document.getElementById("eql")
+
+/*
+    
+    let num1=document.getElementById("num1")
+    let num2=document.getElementById("num2")
+    let plus=document.getElementById("plus")
+    let minus=document.getElementById("min")
+    let div=document.getElementById("div")
+    let mult=document.getElementById("mult")
+    let eql=document.getElementById("eql")
+    let ans=document.getElementById("ans")
+    let result
+    ans.textContent=""
+    plus.addEventListener("click",()=>{
+    let no1=Number(num1.value)
+    let no2=Number(num2.value)
+    result=no1+no2
+    ans.textContent=`${no1}+${no2}=${result}`
+    })
+    minus.addEventListener("click",()=>{
+        let no1=Number(num1.value)
+        let no2=Number(num2.value)
+        result=no1-no2
+        ans.textContent=`${no1}-${no2}=${result}`
+    })
+    div.addEventListener("click",()=>{
+        let no1=Number(num1.value)
+        let no2=Number(num2.value)
+        result=no1/no2
+        ans.textContent=`${no1}/${no2}=${result}`
+    })
+    mult.addEventListener("click",()=>{
+        let no1=Number(num1.value)
+        let no2=Number(num2.value)
+        result=no1*no2
+        ans.textContent=`${no1}*${no2}=${result}`
+    })
+*/
+
+
+/*
+    //updatedversion
+    let num1=document.getElementById("num1")
+    let num2=document.getElementById("num2")
+    let ans=document.getElementById("ans")
+        let plus=document.getElementById("plus")
+        let minus=document.getElementById("min")
+        let div=document.getElementById("div")
+        let mult=document.getElementById("mult")
+        let clr=document.getElementById("clr")
+
+    function Calculate(op){
+        let no1=Number(num1.value)
+        let no2=Number(num2.value)
+        switch(op){
+            case '+': result=no1+no2
+                        break;
+            case '-': result=no1-no2
+                        break;
+            case '/':result=no1/no2 
+                        break
+            case'*':result=no1*num2
+                        break
+        }
+        ans.textContent=`${no1}${op}${no2}=${result}`
+
+    }
+
+    plus.addEventListener("click",()=>Calculate('+'))
+    minus.addEventListener("click",()=>Calculate('-'))
+    div.addEventListener("click",()=>Calculate('/'))
+    mult.addEventListener("click",()=>Calculate('*'))
+    clr.addEventListener("click",()=>{
+    num1.value=""
+    num2.value=""
+        ans.textContent=" "
+        
+    })
+*/
+
+/*
+    const text=document.getElementById("txt")
+    let count=document.getElementById("count")
+    text.addEventListener("input",()=>{
+        if(text.value.length>100){
+            text.value=text.value.slice(0,100)
+        }else{
+        count.textContent=`${text.value.length}/100`
+        }
+    })
+*/
+
+const image=document.getElementById("image")
+const inpt=document.getElementById("password")
+const lmt=document.getElementById("lmt")
+image.addEventListener("click",()=>{
+   if(inpt.type=="text"){
+    inpt.type="password"
+   }else{
+    inpt.type="text"
+   }
+    
 })
-
-
+inpt.addEventListener("input",()=>{
+    if(inpt.value.length>10){
+        lmt.textContent="* Password can't be more than 10"
+        inpt.value=inpt.value.slice(0,10)
+    }
+})
