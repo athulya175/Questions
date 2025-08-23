@@ -1248,20 +1248,109 @@ searchid.addEventListener("click",()=>{
     })
 */
 
-const image=document.getElementById("image")
-const inpt=document.getElementById("password")
-const lmt=document.getElementById("lmt")
-image.addEventListener("click",()=>{
-   if(inpt.type=="text"){
-    inpt.type="password"
-   }else{
-    inpt.type="text"
-   }
-    
-})
-inpt.addEventListener("input",()=>{
-    if(inpt.value.length>10){
-        lmt.textContent="* Password can't be more than 10"
-        inpt.value=inpt.value.slice(0,10)
+/*
+    const image=document.getElementById("image")
+    const inpt=document.getElementById("password")
+    const lmt=document.getElementById("lmt")
+    image.addEventListener("click",()=>{
+    if(inpt.type=="text"){
+        inpt.type="password"
+    }else{
+        inpt.type="text"
     }
+        
+    })
+    inpt.addEventListener("input",()=>{
+        if(inpt.value.length>10){
+            lmt.textContent="* Password can't be more than 10"
+            inpt.value=inpt.value.slice(0,10)
+        }
+    })
+*/
+
+/*
+    let red=document.getElementById("red")
+    let pink=document.getElementById("pink")
+    let yellow=document.getElementById("yellow")
+    let black=document.getElementById("black")
+    let white=document.getElementById("white")
+    let grey=document.getElementById("grey")
+    let blue=document.getElementById("blue")
+    let layout=document.querySelector(".panel")
+    function background(clr){
+        let bg=layout.style.backgroundColor=`${window.getComputedStyle(clr).backgroundColor}`
+        console.log(bg)
+    }
+    red.addEventListener("click",()=>background(red))
+    pink.addEventListener("click",()=>background(pink))
+    yellow.addEventListener("click",()=>background(yellow))
+    white.addEventListener("click",()=>background(white))
+    grey.addEventListener("click",()=>background(grey))
+    blue.addEventListener("click",()=>background(blue))
+    black.addEventListener("click",()=>background(black))
+*/
+
+
+
+/*
+    let text=document.getElementById("text")
+    let btn=document.getElementById("add")
+    let unorderd=document.getElementById("unorderd")
+    btn.addEventListener("click",()=>{
+        let content=text.value
+        let li=document.createElement("li")
+        li.id="list"
+        li.textContent=content
+
+        unorderd.appendChild(li)
+        let span=document.createElement("span")
+        span.id="cross"
+        span.textContent="\u00d7"
+        li.appendChild(span)
+        let cross=document.getElementById("cross")
+        cross.addEventListener("click",()=>{
+            li.remove()
+        })
+        let list=document.getElementById("list")
+        list.addEventListener("click",()=>{
+            li.style.textDecoration="line-through"
+        })
+        text.value=" "
+    })
+*/
+
+
+/*
+    let nxt=document.getElementById("nxt")
+    let prev=document.getElementById("prev")
+    let container=document.querySelector(".container")
+    let images=["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT2Z4JnijMl8QAvhF-YVwseDPVo_hJB68gpw&s","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLNjSxOuRteHvgjdkrNvmNSukYdR2xnKKdmQ&s"]
+    let img=document.createElement("img")
+    container.append(img)
+
+    let current=0
+    img.src=images[current]
+    nxt.addEventListener("click",()=>{
+    img.src=images[current]   
+    current++
+    if(current>=images.length){
+        current=0
+    }
+    })
+    prev.addEventListener("click",()=>{
+        img.src=images[current]
+        current--
+    if(current<0){
+        current=images.length-1
+    }
+    })
+*/
+
+let All=document.getElementById("all")
+let fruit=document.getElementById("fruit")
+let vegetable=document.getElementById("vege")
+let Drinks=document.getElementById("Drk")
+let list=document.getElementById("list")
+All.addEventListener("click",()=>{
+    
 })
