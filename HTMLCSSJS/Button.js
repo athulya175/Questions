@@ -1346,11 +1346,171 @@ searchid.addEventListener("click",()=>{
     })
 */
 
-let All=document.getElementById("all")
-let fruit=document.getElementById("fruit")
-let vegetable=document.getElementById("vege")
-let Drinks=document.getElementById("Drk")
-let list=document.getElementById("list")
-All.addEventListener("click",()=>{
+
+/*
+    let All=document.getElementById("all")
+    let fruit=document.getElementById("fruit")
+    let vegetable=document.getElementById("vege")
+    let Drinks=document.getElementById("Drk")
+    let out=document.getElementById("list")
+    let list=document.querySelectorAll("#list li")
+    let navli=document.querySelectorAll(".navli")
+
+    function setActive(button){
+        navli.forEach(btn=>btn.classList.remove("active"))
+        button.classList.add("active")
+    }
+    fruit.addEventListener("click",()=>{
+        setActive(fruit)
+        list.forEach(x => {
+            if(x.id=="frt")
+            {
+            x.style.display="block"
+            }
+            else{
+                x.style.display="none"
+            }
+        });
+    })
+    All.addEventListener("click",()=>{
+        setActive(All)
+        list.forEach(x=>{
+        x.style.display="block"
+        })
+    })
+    vegetable.addEventListener("click",()=>{
+        setActive(vegetable)
+        list.forEach(x=>{ 
+        if(x.id=="veg")
+        {
+            x.style.display="block"
+        }
+        else{
+            x.style.display="none"
+        }
+    })
+    })
+    Drinks.addEventListener("click",()=>{
+        setActive(Drinks)
+        list.forEach(x=>{
+            if(x.id=="jce"){
+                x.style.display="block"
+            }
+            else{
+                x.style.display="none"
+            }
+        })
+    })
+*/
+
+/*
+//Not completed
+    let input=document.getElementById("input")
+    let time=document.getElementById("time")
+    let starttime=null
+    input.addEventListener("input",()=>{
+        if(!starttime){
+            starttime=Date.now()
+        timer=setInterval(()=>{
+    let millisecds=Date.now()-starttime
+    let secnds=(millisecds/1000)
+    let mints=(secnds/60)
+
+        time.textContent=`${mints.toFixed(2)} : ${secnds.toFixed(2).padStart(5,"0")}`
+        let typedWords=input.value.trim().split(/\s+/).length
+        let wpm=((typedWords/(millisecds/1000))*60).toFixed(2)
+        console.log("wpm:",wpm)
+    },200)
+        }
     
-})
+    })
+*/
+
+
+
+/*
+    let amount=document.getElementById("amount")
+    let description=document.getElementById("description")
+    let selected=document.getElementById("select")
+    let btnclk=document.getElementById("btn")
+    let amountul=document.getElementById("amountul")
+    let descul=document.getElementById("descul")
+    let cateul=document.getElementById("cateul")
+    let tot=document.getElementById("tot")
+    let total=0
+    btnclk.addEventListener("click",()=>{
+        let amounts=amount.value
+        let descriptions=description.value
+        let selectval=selected.value
+        console.log(selectval)
+        
+    })
+    amount.addEventListener("keydown",(event)=>{
+        if(event.key==="Enter"){
+            let amounts=amount.value
+            let li=document.createElement("li")
+            li.textContent=amounts
+            amountul.appendChild(li)
+            let amntEval=Number(amounts)
+            total+=amntEval
+            amount.value=""
+        }
+    })
+    description.addEventListener("keydown",(event)=>{
+            if(event.key==="Enter"){
+                let descriptions=description.value
+                let li=document.createElement("li")
+                li.textContent=descriptions
+                descul.appendChild(li)
+                description.value=""
+            }
+    })
+    selected.addEventListener("change",()=>{
+        let selectval=selected.value
+        let li=document.createElement("li")
+        li.textContent=selectval
+    cateul.appendChild(li)
+    selected.value=""
+
+    })
+    btnclk.addEventListener("click",()=>{
+    tot.textContent=total
+    })
+*/
+
+/*
+    let input=document.getElementById("input")
+    let send=document.getElementById("send")
+    let chat=document.getElementById("chat")
+    let emojipnl=document.getElementById("emojipnl")
+    let emoji=document.getElementById("emoji")
+    let emojicont=document.getElementById("emojicont")
+    let spanemo=document.querySelectorAll("span")
+    emojipnl.style.display="none"
+    send.addEventListener("click",()=>{
+        let chats=input.value
+        let li=document.createElement("li")
+        li.textContent=chats
+        chat.appendChild(li)
+        input.value=""
+        emojipnl.style.display="none"
+    })
+    emoji.addEventListener("click",()=>{
+        console.log("hey")
+        if(emojipnl.style.display==="none"){
+            emojipnl.style.display="block"
+        }
+        else{
+            console.log("oi")
+            emojipnl.style.display="none"
+        }
+    })
+        spanemo.forEach(x => {
+            x.addEventListener("click",()=>{
+                console.log(x.textContent) 
+                input.value+=input.value+x.textContent
+            })
+        
+        });
+
+*/

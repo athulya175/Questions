@@ -1246,23 +1246,163 @@ button:hover{
         left: 0;
     }
 */
-.nine{
-    font-size: 20px;
-}
-.nav li{
-    display: inline-block;
-    padding:12px 24px;
-    cursor: pointer;
-}
-.nav li:hover{
-    background-color: hsl(0, 0%, 50%); ;
-}
-.nav{
-    background-color: hsla(0, 0%, 50%, 0.493);
-}
-li{
-    list-style: none;
-}
-#list li{
-    margin-bottom: 12px;
-}
+
+
+/*
+    .nine{
+        font-size: 20px;
+    }
+    .nav li{
+        display: inline-block;
+        padding:12px 24px;
+        cursor: pointer;
+    }
+    .nav li:hover{
+        background-color: hsl(0, 0%, 50%); 
+    }
+    .nav{
+        background-color: hsla(0, 0%, 50%, 0.493);
+    }
+    .navli.active{
+        background-color: hsl(0, 0%, 50%);
+    }
+    li{
+        list-style: none;
+    }
+    #list li{
+        margin-bottom: 12px;
+    }
+*/
+
+
+/*
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    p{
+        width: 70%;
+        font-size: 20px;
+        line-height: 30px
+    }
+    input{
+        width: 70%;
+        height: 300px;
+        font-size: 20px;
+    }
+    #wpm{
+        padding: 20px;
+        font-size: 30px;
+    }
+    #time{
+        position: absolute;
+        right: 0;
+        top: 12%;
+        left: 80%;
+        color: red;
+    }
+*/
+
+
+/*
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 24px;
+    }
+    input {
+        padding: 12px;
+        width: 40%;
+        margin-bottom: 20px;
+    }
+    select{
+        padding: 12px;
+        margin-bottom: 20px;
+    }
+    button {
+        padding: 8px;
+    }
+    th{
+        border-bottom: 1px solid;
+        padding: 8px 16px;
+    }
+    td{
+        
+        border-bottom: 1px solid;
+        padding: 4px 18px;
+    }
+    .table{
+        display: flex;
+        text-align: justify;
+        padding-top: 24px;
+    }
+    li{
+        list-style: none;
+    }
+    ul span{
+        padding: 12px;
+    font-weight: 700; 
+    }
+    li{
+        padding: 12px;
+    }
+*/
+
+/*
+    .chatapp{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 200px;
+
+    }
+    .container{
+        width: 60%;
+        height: 500px;
+        background-color: darkslategray;
+        overflow-y: scroll;
+        
+    }
+    input{
+        position: absolute;
+        bottom: 0;
+        padding: 12px;
+        width: 85.5%;
+        padding-left:30px;
+    }
+    img{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 30px;
+        transform: rotate(45deg);
+        margin-right: 6px;
+        margin-bottom: 5px;
+    }
+    #emoji{
+        left: 0;
+        transform: rotate(2deg);
+        padding-right: 12px;
+    }
+    .sendbar{
+        position: fixed;
+    width: 312px;
+    bottom: 0;
+    margin-bottom: 54px;
+    }
+    ul{
+        padding-left: 20px;
+    }
+    li{
+        list-style: none;
+        background-color: white;
+        width: fit-content;
+        padding: 6px 12px;
+        border-radius: 6px;
+        margin-bottom: 10px;
+    }
+*/
