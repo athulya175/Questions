@@ -1514,3 +1514,59 @@ searchid.addEventListener("click",()=>{
         });
 
 */
+const rock=document.getElementById("rock")
+const paper=document.getElementById("paper")
+const scissor=document.getElementById("scissor")
+const user=document.getElementById("user")
+const comp=document.getElementById("comp")
+const btn=document.getElementById("play")
+let result=document.querySelector(".result")
+let emoji=["✊","✋","✌️"]
+let choice=["rock","paper","scissor"]
+let userChoice=""
+let compChoice=""
+rock.addEventListener("click",()=>{
+    
+        user.textContent=`You:${emoji[0]}`
+        userChoice="rock"
+        result.textContent=" "
+        
+})
+paper.addEventListener("click",()=>{
+    user.textContent=`You:${emoji[1]}`
+    userChoice="paper"
+    result.textContent=""
+
+})
+scissor.addEventListener("click",()=>{
+    user.textContent=`you:${emoji[2]}`
+    userChoice="scissor"
+    result.textContent=""
+})
+
+
+
+    function playGame(){
+    let rand=Math.floor(Math.random()*3)+0
+    comp.textContent=`Computer:${emoji[rand]}` 
+    compChoice=choice[rand]
+
+    if(userChoice===compChoice){
+        result.textContent="IT'S A DRAW"
+    }else if(
+        (userChoice==="rock")&&(compChoice==="scissor")||
+        (userChoice==="scissor")&&(compChoice==="paper")||
+        (userChoice==="paper")&&(compChoice==="rock")
+    ){
+        result.textContent="YOU WIN"
+    }
+    else{
+        result.textContent="YOU LOST"
+    }
+
+}
+
+btn.addEventListener("click",()=>{
+    playGame()
+})
+

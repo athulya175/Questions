@@ -1406,3 +1406,55 @@ button:hover{
         margin-bottom: 10px;
     }
 */
+
+
+body{
+    background-color: antiquewhite;
+}
+.Rock{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 54px;
+}
+h1{
+    color: rgb(61, 3, 3);
+    display: block;
+    margin-bottom: 60px;
+}
+span{
+    display: block;
+}
+button{
+    padding: 12px 24px;
+    font-size: 24px;
+    background-color: aliceblue;
+    border: 1px solid;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.644);
+    cursor: pointer;
+    margin-left: 24px;
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+}
+button:hover{
+    transform: scale(1.1);
+}
+.choice span{
+    display: inline;
+    padding-right: 100px;
+}
+.choice{
+    padding: 50px;
+    font-size: 30px;
+}
+.result{
+    padding-left: 150px;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+#play{
+    display: block;
+    margin-left: 180px;
+    
+}
