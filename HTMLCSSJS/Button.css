@@ -1408,53 +1408,110 @@ button:hover{
 */
 
 
-body{
-    background-color: antiquewhite;
-}
-.Rock{
+
+/*
+    body{
+        background-color: antiquewhite;
+    }
+    .Rock{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 54px;
+    }
+    h1{
+        color: rgb(61, 3, 3);
+        display: block;
+        margin-bottom: 60px;
+    }
+    span{
+        display: block;
+    }
+    button{
+        padding: 12px 24px;
+        font-size: 24px;
+        background-color: aliceblue;
+        border: 1px solid;
+        border-radius: 5px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.644);
+        cursor: pointer;
+        margin-left: 24px;
+        margin-bottom: 10px;
+        transition: transform 0.3s;
+    }
+    button:hover{
+        transform: scale(1.1);
+    }
+    .choice span{
+        display: inline;
+        padding-right: 100px;
+    }
+    .choice{
+        padding: 50px;
+        font-size: 30px;
+    }
+    .result{
+        padding-left: 150px;
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+    #play{
+        display: block;
+        margin-left: 180px;
+        
+    }
+*/
+.Whack{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 54px;
+}
+.container{
+    background-color: antiquewhite;
+}
+.moles{
+    padding-top: 100px;
+    padding: 80px 80px 0 80px;
+    display: grid;
+    grid-template-columns: repeat(5,100px);
+    border-radius: 15px;
+}
+.mole{
+    width: 50px;
+    height: 50px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    padding: 12px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    font-size: 24px;
+    text-align: center;
 }
 h1{
-    color: rgb(61, 3, 3);
+    margin-left: 10px;
+    position: absolute;
     display: block;
-    margin-bottom: 60px;
+    white-space: nowrap;
+    top: 0;
+    text-decoration: underline;
+    margin-bottom: 100px;
+    
 }
-span{
-    display: block;
+.time{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    margin-top: -60px;  
+}
+#timecount{
+    font-size: 60px;
+    margin-bottom: 0;
 }
 button{
     padding: 12px 24px;
-    font-size: 24px;
-    background-color: aliceblue;
+    background-color: white;
     border: 1px solid;
     border-radius: 5px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.644);
     cursor: pointer;
-    margin-left: 24px;
-    margin-bottom: 10px;
-    transition: transform 0.3s;
-}
-button:hover{
-    transform: scale(1.1);
-}
-.choice span{
-    display: inline;
-    padding-right: 100px;
-}
-.choice{
-    padding: 50px;
-    font-size: 30px;
-}
-.result{
-    padding-left: 150px;
-    font-size: 35px;
-    margin-bottom: 30px;
-}
-#play{
-    display: block;
-    margin-left: 180px;
-    
 }

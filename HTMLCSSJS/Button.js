@@ -1514,59 +1514,97 @@ searchid.addEventListener("click",()=>{
         });
 
 */
-const rock=document.getElementById("rock")
-const paper=document.getElementById("paper")
-const scissor=document.getElementById("scissor")
-const user=document.getElementById("user")
-const comp=document.getElementById("comp")
-const btn=document.getElementById("play")
-let result=document.querySelector(".result")
-let emoji=["✊","✋","✌️"]
-let choice=["rock","paper","scissor"]
-let userChoice=""
-let compChoice=""
-rock.addEventListener("click",()=>{
-    
-        user.textContent=`You:${emoji[0]}`
-        userChoice="rock"
-        result.textContent=" "
+
+/*
+    const rock=document.getElementById("rock")
+    const paper=document.getElementById("paper")
+    const scissor=document.getElementById("scissor")
+    const user=document.getElementById("user")
+    const comp=document.getElementById("comp")
+    const btn=document.getElementById("play")
+    let result=document.querySelector(".result")
+    let emoji=["✊","✋","✌️"]
+    let choice=["rock","paper","scissor"]
+    let userChoice=""
+    let compChoice=""
+    rock.addEventListener("click",()=>{
         
-})
-paper.addEventListener("click",()=>{
-    user.textContent=`You:${emoji[1]}`
-    userChoice="paper"
-    result.textContent=""
+            user.textContent=`You:${emoji[0]}`
+            userChoice="rock"
+            result.textContent=" "
+            
+    })
+    paper.addEventListener("click",()=>{
+        user.textContent=`You:${emoji[1]}`
+        userChoice="paper"
+        result.textContent=""
 
-})
-scissor.addEventListener("click",()=>{
-    user.textContent=`you:${emoji[2]}`
-    userChoice="scissor"
-    result.textContent=""
-})
+    })
+    scissor.addEventListener("click",()=>{
+        user.textContent=`you:${emoji[2]}`
+        userChoice="scissor"
+        result.textContent=""
+    })
 
 
 
-    function playGame(){
-    let rand=Math.floor(Math.random()*3)+0
-    comp.textContent=`Computer:${emoji[rand]}` 
-    compChoice=choice[rand]
+        function playGame(){
+        let rand=Math.floor(Math.random()*3)+0
+        comp.textContent=`Computer:${emoji[rand]}` 
+        compChoice=choice[rand]
 
-    if(userChoice===compChoice){
-        result.textContent="IT'S A DRAW"
-    }else if(
-        (userChoice==="rock")&&(compChoice==="scissor")||
-        (userChoice==="scissor")&&(compChoice==="paper")||
-        (userChoice==="paper")&&(compChoice==="rock")
-    ){
-        result.textContent="YOU WIN"
+        if(userChoice===compChoice){
+            result.textContent="IT'S A DRAW"
+        }else if(
+            (userChoice==="rock")&&(compChoice==="scissor")||
+            (userChoice==="scissor")&&(compChoice==="paper")||
+            (userChoice==="paper")&&(compChoice==="rock")
+        ){
+            result.textContent="YOU WIN"
+        }
+        else{
+            result.textContent="YOU LOST"
+        }
+
     }
-    else{
-        result.textContent="YOU LOST"
-    }
 
-}
-
+    btn.addEventListener("click",()=>{
+        playGame()
+    })
+*/
+let btn=document.getElementById("click")
+let timecount=document.getElementById("timecount")
+let holes=document.querySelectorAll(".mole")
+let starts=0
+let timer
+ let moleTimer
 btn.addEventListener("click",()=>{
-    playGame()
-})
+    // clearInterval(timer)
+    starts=0
+    timer=setInterval(()=>{
+        starts++
+        if(starts===11){
+            clearInterval(timer)
+        }
+        else{
+            timecount.textContent=`${starts}`
+        }
+    },1000)
 
+    clearInterval(moleTimer)
+    moleTimer=setInterval(()=>{
+        if(starts===11){
+            clearInterval(moleTimer)
+        }
+        else{
+
+        
+        holes.forEach(x=>x.textContent="")
+
+        const randmIndex=Math.floor(Math.random()*holes.length)
+        const randomHole=holes[randmIndex]
+        randomHole.textContent="🐹"
+        }
+    },1000)
+    
+})
