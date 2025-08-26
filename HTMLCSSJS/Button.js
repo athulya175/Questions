@@ -1572,39 +1572,93 @@ searchid.addEventListener("click",()=>{
         playGame()
     })
 */
-let btn=document.getElementById("click")
-let timecount=document.getElementById("timecount")
-let holes=document.querySelectorAll(".mole")
-let starts=0
-let timer
- let moleTimer
-btn.addEventListener("click",()=>{
-    // clearInterval(timer)
-    starts=0
-    timer=setInterval(()=>{
-        starts++
-        if(starts===11){
-            clearInterval(timer)
-        }
-        else{
-            timecount.textContent=`${starts}`
-        }
-    },1000)
 
-    clearInterval(moleTimer)
-    moleTimer=setInterval(()=>{
-        if(starts===11){
-            clearInterval(moleTimer)
-        }
-        else{
-
+/*
+    let btn=document.getElementById("click")
+    let timecount=document.getElementById("timecount")
+    let holes=document.querySelectorAll(".mole")
+    const showScore=document.getElementById("score")
+    let score=0
+    let starts=0
+    let timer
+    let moleTimer
+    holes.forEach(x=>{
         
-        holes.forEach(x=>x.textContent="")
+        x.addEventListener("click",()=>{
+            if(x.textContent==="🐹"){
+                score++
+                showScore.textContent=score
+                x.textContent=""
+            }
+        })
+    })
+    btn.addEventListener("click",()=>{
+        clearInterval(timer)
+        clearInterval(moleTimer)
+        starts=0
+        score=0
+        timecount.textContent=starts
+        showScore.textContent=score
+        timer=setInterval(()=>{
+            starts++
+            if(starts>10){
+                clearInterval(timer)
+                clearInterval(moleTimer)
+            }
+            else{
+                timecount.textContent=`${starts}`
+            }
+        },1000)
+        moleTimer=setInterval(()=>{  
+            holes.forEach(x=>x.textContent="")
 
+            const randmIndex=Math.floor(Math.random()*holes.length)
+            const randomHole=holes[randmIndex]
+            randomHole.textContent="🐹"
+        
+        },1000)
+
+    })
+*/
+
+/*
+    const click=document.getElementById("click")
+    const timecount=document.getElementById("timecount")
+    const holes=document.querySelectorAll(".mole")
+    let scoreShow=document.getElementById("score")
+    let timer
+    let moleTimer
+    let score=0
+    click.addEventListener("click",()=>{
+        let time=0
+        let score=0
+        clearInterval(timer)
+        clearInterval(moleTimer)
+        scoreShow.textContent="0"
+        timecount.textContent="0"
+    timer= setInterval(()=>{
+            time++
+            if(time>10){
+                clearInterval(timer)
+                clearInterval(moleTimer)
+            }
+            else{
+                timecount.textContent=time   
+            }
+        },1000)
+        moleTimer=setInterval(()=>{
+        holes.forEach(x=>x.textContent="") 
         const randmIndex=Math.floor(Math.random()*holes.length)
-        const randomHole=holes[randmIndex]
-        randomHole.textContent="🐹"
+        const randHole=holes[randmIndex]
+        randHole.textContent="🐹"
+        },1000)
+    })
+    holes.forEach(x=>x.addEventListener("click",()=>{
+        if(x.textContent==="🐹"){
+            score++
+            x.textContent=""
+            scoreShow.textContent=score
         }
-    },1000)
-    
-})
+        
+    }))
+*/

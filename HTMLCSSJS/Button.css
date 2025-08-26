@@ -1461,57 +1461,63 @@ button:hover{
         
     }
 */
-.Whack{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.container{
-    background-color: antiquewhite;
-}
-.moles{
-    padding-top: 100px;
-    padding: 80px 80px 0 80px;
-    display: grid;
-    grid-template-columns: repeat(5,100px);
-    border-radius: 15px;
-}
-.mole{
-    width: 50px;
-    height: 50px;
-    background-color: aliceblue;
-    border-radius: 50%;
-    padding: 12px;
-    margin-bottom: 50px;
-    cursor: pointer;
-    font-size: 24px;
-    text-align: center;
-}
-h1{
-    margin-left: 10px;
-    position: absolute;
-    display: block;
-    white-space: nowrap;
-    top: 0;
-    text-decoration: underline;
-    margin-bottom: 100px;
-    
-}
-.time{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; 
-    margin-top: -60px;  
-}
-#timecount{
-    font-size: 60px;
-    margin-bottom: 0;
-}
-button{
-    padding: 12px 24px;
-    background-color: white;
-    border: 1px solid;
-    border-radius: 5px;
-    cursor: pointer;
-}
+
+
+
+
+/*
+    .Whack{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container{
+        background-color: antiquewhite;
+    }
+    .moles{
+        padding-top: 100px;
+        padding: 80px 80px 0 80px;
+        display: grid;
+        grid-template-columns: repeat(5,100px);
+        border-radius: 15px;
+    }
+    .mole{
+        width: 50px;
+        height: 50px;
+        background-color: aliceblue;
+        border-radius: 50%;
+        padding: 12px;
+        margin-bottom: 50px;
+        cursor: pointer;
+        font-size: 24px;
+        text-align: center;
+    }
+    h1{
+        margin-left: 10px;
+        position: absolute;
+        display: block;
+        white-space: nowrap;
+        top: 0;
+        text-decoration: underline;
+        margin-bottom: 100px;
+        
+    }
+    .time{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+        margin-top: -60px;  
+    }
+    #timecount{
+        font-size: 60px;
+        margin-bottom: 0;
+    }
+    button{
+        padding: 12px 24px;
+        background-color: white;
+        border: 1px solid;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+*/
