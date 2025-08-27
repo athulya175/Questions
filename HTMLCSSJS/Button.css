@@ -1521,3 +1521,38 @@ button:hover{
         cursor: pointer;
     }
 */
+.delay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contents{
+    padding-left: 100px;
+}
+#choice{
+    padding-top: 12px;
+    display: flex;
+    font-size: 20px;
+
+}
+#choice p{
+    margin-right: 100px;
+
+}
+.head{
+    margin-left: 30px;
+}
+button{
+    padding: 12px;
+    width: 90px;
+    margin-right: 50px;
+    font-size: 18px;
+}
+#result{
+    padding-left: 100px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+
