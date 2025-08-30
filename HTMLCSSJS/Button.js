@@ -1573,7 +1573,7 @@ searchid.addEventListener("click",()=>{
     })
 */
 
-/*
+
     let btn=document.getElementById("click")
     let timecount=document.getElementById("timecount")
     let holes=document.querySelectorAll(".mole")
@@ -1619,7 +1619,4 @@ searchid.addEventListener("click",()=>{
         },1000)
 
     })
-*/
-
-
 
