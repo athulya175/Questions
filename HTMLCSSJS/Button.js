@@ -1573,6 +1573,7 @@ searchid.addEventListener("click",()=>{
     })
 */
 
+/*
 
     let btn=document.getElementById("click")
     let timecount=document.getElementById("timecount")
@@ -1620,3 +1621,4 @@ searchid.addEventListener("click",()=>{
 
     })
 
+*/
