@@ -1622,3 +1622,15 @@ searchid.addEventListener("click",()=>{
     })
 
 */
+/*
+function reverseString(str) {
+  return str.split("").reverse().join("");
+}
+console.log(reverseString("hello")); 
+*/
+
+function isPalindrome(word) {
+  let rev = word.split("").reverse().join("");
+  return word === rev;
+}
+console.log(isPalindrome("madam")); // true
