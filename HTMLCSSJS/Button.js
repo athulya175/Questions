@@ -1629,8 +1629,13 @@ function reverseString(str) {
 console.log(reverseString("hello")); 
 */
 
+/*
 function isPalindrome(word) {
   let rev = word.split("").reverse().join("");
   return word === rev;
 }
-console.log(isPalindrome("madam")); // true
+console.log(isPalindrome("madam")); 
+*/
+
+let nums = [5, 9, 2, 11, 3];
+console.log(Math.max(...nums)); 
