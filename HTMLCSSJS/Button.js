@@ -1639,3 +1639,8 @@ console.log(isPalindrome("madam"));
 
 let nums = [5, 9, 2, 11, 3];
 console.log(Math.max(...nums)); 
+
+
+
+
+
