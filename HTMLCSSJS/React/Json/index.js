@@ -67,6 +67,7 @@ console.log("WIth parse",parsePeople)
 */
 
 /********************************************************** */
+/*
 const myObj={name:"Dave",
     hobbies:["eat","sleep","code"],
     hello:function(){
@@ -82,3 +83,13 @@ console.log(sendJson)
 
 const receivedJson=JSON.parse(sendJson)
 console.log(receivedJson)   // the thing is we 1st changes the json object to string that time we losts the method(hello)
+*/
+
+/************************ChatGpt****************************** */
+fetch("./ChatGpt.json")
+.then(response=>response.json())
+.then(data=>{
+    data.forEach(mobile => {
+        console.log(mobile.name,mobile.price)
+    });
+})
