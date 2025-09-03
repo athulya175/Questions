@@ -4,3 +4,5 @@ btn.addEventListener("click",()=>{
     let rand=Math.floor(Math.random()*100)+1
     text.textContent=rand
 })
+
+
