@@ -31,7 +31,8 @@ fetch("./Product.json")
         <div class="pdtdtls">
             <div class="pdt-left">
             <div class="pdtName">${pdt.name}</div>
-            <div class="Ratings"><span id="rdlts"><div class=</span></div>
+            <div class="Ratings"><span id="rdlts"><div class="ratcount">${pdt.rats}<img src=${pdt.ratimg} class="starimg"></div></span>
+            </div>
             </div>
         </div>
         `

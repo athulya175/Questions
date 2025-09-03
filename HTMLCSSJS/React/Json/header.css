@@ -79,3 +79,24 @@ a,img{
     display: block;
     cursor: pointer;
 }
+.Ratings{
+    margin-top: 6px;
+}
+.rdlts{
+    position: relative;
+}
+.ratcount{
+    line-height: normal;
+    display: inline-block;
+    color: #fff;
+    padding: 2px 4px 6px;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 12px;
+    vertical-align: middle;
+    background-color: #388e3c;
+}
+.starimg{
+    margin: 2px 0 0 2px;
+    height: 10px;
+}
