@@ -253,5 +253,4 @@ fetch("./Product.json")
                 }
             })
         })
-
 })

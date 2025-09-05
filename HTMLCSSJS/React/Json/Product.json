@@ -8,7 +8,7 @@
     "brand":"Mi",
     "ram":4,
     "rom":64,
-    "expandable":true,
+    "expandable":false,
     "display":{"size-cm":13,"size-inch":5.5,"type":"Full HD Display"},
     "camera":{"rear":"12MP+12Mp","front":"5Mp"},
     "battery":{"capacity":3080,"desc":"mAh Li-polymer Battery"},
