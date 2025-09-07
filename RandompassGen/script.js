@@ -20,4 +20,5 @@ function passGen(){
 function copying(){
     passwordbox.select()
     document.execCommand("copy")
+    console.log("cpy")
 }
