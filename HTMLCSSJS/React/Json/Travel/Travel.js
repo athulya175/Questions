@@ -43,7 +43,7 @@ function createCard(pdt){
         </div>`
         return card
 }
-
+/*
 fetch("./Travel.json")
 .then(response=>response.json())
 .then(data=>{
@@ -70,5 +70,5 @@ fetch("./Travel.json")
     })
           
 
-
+/*
 
