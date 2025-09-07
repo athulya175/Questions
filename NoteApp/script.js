@@ -25,6 +25,6 @@ function addNotes(){
 
 const addNote=document.querySelector(".createnotebtn")
 addNote.addEventListener("click",addNotes)
-
+console.log("click")
 
 
