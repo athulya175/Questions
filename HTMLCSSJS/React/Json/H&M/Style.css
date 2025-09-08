@@ -11,6 +11,7 @@ body{
     font-weight: 400;
     color: black;
     font-family: HM;
+  
 }
 header{
     display: grid;
@@ -130,8 +131,7 @@ ul{
 .filterButtonList{
     padding: 8px;
     min-width: max-content;
-}
-.lists{
+    background-color: white;
     font-size: 14px;
     line-height: 1.2142857142857142;
     text-decoration: none;
@@ -143,3 +143,70 @@ ul{
     border: 1px solid #000000;
     padding: 8px;
 }
+.heading{
+    margin: 48px 24px 64px !important;
+    font-size: 32px;
+    font-weight: 100;
+    flex: 1 1;
+    margin: 0;
+    font-variation-settings: "wdth" 140, "wght" 700, "TITL" 1;
+    text-transform: uppercase;
+}
+.sortby{
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 2;
+    padding: 0 24px;
+    width: 100%;
+}
+.sortby1{
+    display: inline-flex;
+    padding-inline-end: 16px;
+    justify-content: space-between;
+    gap: 500px;
+}
+.sortby2{
+    position: relative;
+}
+.sortbtn{
+    display: flex;
+    min-height: 48px;
+    min-width: 48px;
+    background-color: transparent;
+    color: #000000;
+    padding-inline: 0 0;
+    flex-direction: row;
+    border: none;
+    align-items: center;
+    white-space: nowrap;
+}
+.sortbtn img{
+    margin-inline-start: 8px;
+    align-items: center;
+    display: flex;
+}
+.cardul{
+    display: grid;
+    margin-top: 0;
+    margin-bottom: 40px;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(4,1fr);
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+   
+}
+.cardli{
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+  
+.cardtop img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.cardbtm{
+    padding: 10px;
+}
+

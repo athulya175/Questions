@@ -1,6 +1,6 @@
 [{
     "type":"t-shirt & tops",
-    "tit":"Men's T-Shirts & Tops",
+    "title":"Men's T-Shirts & Tops",
     "desc":"Oversized Fit Printed T-shirt",
     "price":"1,499.00",
     "color":["white","black","white"],
@@ -9,7 +9,7 @@
 },
 {
     "type":"t-shirt & tops",
-    "tit":"Men's T-Shirts & Tops",
+    "title":"Men's T-Shirts & Tops",
     "desc":"Loose Fit Printed T-shirt",
     "price":"799.00",
     "color":["pink","green","white"],
@@ -18,7 +18,7 @@
 },
 {
     "type":"t-shirt & tops",
-    "tit":"Men's T-Shirts & Tops",
+    "title":"Men's T-Shirts & Tops",
     "desc":"Loose Fit Printed T-shirt",
     "price":"799.00",
     "color":["grey","brown","white"],
@@ -28,7 +28,7 @@
 },
 {
     "type":"t-shirt & tops",
-    "tit":"Men's T-Shirts & Tops",
+    "title":"Men's T-Shirts & Tops",
     "desc":"Loose Fit Vintage-look printed T-shirt",
     "price":"1,499.00",
     "color":["cream","black","black","pink"],
@@ -37,7 +37,7 @@
 },
 {
     "type":"multipacks",
-    "tit":"Men's T-Shirts & Vests Multipacks",
+    "title":"Men's T-Shirts & Vests Multipacks",
     "desc":"5-pack Regular Fit T-shirts",
     "price":"1,999.00",
     "color":["blue","grey","brown"],
@@ -46,7 +46,7 @@
 {
 
     "type":"multipacks",
-    "tit":"Men's T-Shirts & Vests Multipacks",
+    "title":"Men's T-Shirts & Vests Multipacks",
     "desc":"3-pack Regular Fit T-shirts",
     "price":"1,999.00",
     "color":["blue","grey","brown"],
@@ -54,7 +54,7 @@
 },
 {
     "type":"vests",
-    "tit":"Men's Vests & Tank Tops",
+    "title":"Men's Vests & Tank Tops",
     "desc":"Slim Fit Ribbed vest top",
     "price":" 699.00",
     "color":["orange","peach","red"],
@@ -64,7 +64,7 @@
 {
     
     "type":"tshirt",
-    "tit":"Men's Vests & Tank Tops",
+    "title":"Men's T-Shirts",
     "desc":"Regular Fit T-shirt",
     "price":"  399.00",
     "color":["orange","white","red"],
@@ -74,7 +74,7 @@
 },
 {
     "type":"long sleev",
-    "tit":"Men's Long-Sleeve T-Shirts",
+    "title":"Men's Long-Sleeve T-Shirts",
     "desc":"Regular Fit Piqué polo shirt",
     "price":" 1,499.00",
     "color":["black","white"],
@@ -83,7 +83,7 @@
 },
 {
     "type":"long sleev",
-    "tit":"Men's T-Shirts & Tops",
+    "title":"Men's Long-Sleeve T-Shirts",
     "desc":"Regular Fit Jersey top",
     "price":"799.00",
     "color":["brown","black","grey","red"],
@@ -92,7 +92,7 @@
 },
 {
     "type":"long sleev",
-    "tit":"Men's T-Shirts & Tops",
+    "title":"Men's Long-Sleeve T-Shirts",
     "desc":"Regular Fit Jersey top",
     "price":"799.00",
     "color":["green","indigo","white"],
@@ -101,7 +101,7 @@
 },
 {
     "type":"graphic tees & printed t-shirt",
-    "tit":"Men's T-Shirts & Tops",
+    "title":"Men's Graphic Tees & Printed T-Shirts",
     "desc":"Loose Fit Printed T-shirt",
     "price":"999.00",
     "color":["orange","peach","red"],
