@@ -22,3 +22,4 @@ function copying(){
     document.execCommand("copy")
     console.log("cpy")
 }
+
