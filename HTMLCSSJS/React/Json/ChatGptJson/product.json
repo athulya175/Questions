@@ -1,0 +1,65 @@
+[{
+   "type":"travel",
+   "id":1,
+   "name":"It's Only the Himalayas",
+   "price":45.17,
+   "isInstock":true,
+   "img":"https://books.toscrape.com/media/cache/27/a5/27a53d0bb95bdd88288eaf66c9230d7e.jpg"
+},
+{
+    "type":"travel",
+    "id":2,
+    "name":"Full Moon Over Noh's Ark",
+    "price":49.43,
+    "isInstock":true,
+    "img":"https://books.toscrape.com/media/cache/57/77/57770cac1628f4407636635f4b85e88c.jpg"
+},
+{
+    "type":"travel",
+    "id":2,
+    "name":"See America:A Celebration of Our National park & Tresure Sites",
+    "price":48.87,
+    "isInstock":true,
+    "img":"https://books.toscrape.com/media/cache/9a/7e/9a7e63f12829df4b43b31d110bf3dc2e.jpg"
+},
+{
+    "type":"mystery",
+    "id":4,
+    "name":"Sharp Objects",
+    "price":47.82,
+    "isInstock":true,
+    "img":"https://books.toscrape.com/media/cache/32/51/3251cf3a3412f53f339e42cac2134093.jpg"
+},
+{
+    "type":"mystery",
+    "id":5,
+    "name":"The Past Never Ends",
+    "price":56.50,
+    "isInstock":true,
+    "img":"https://books.toscrape.com/media/cache/89/b8/89b850edb01851a91f64ba114b96acb6.jpg"   
+},
+{
+    "type":"historical fiction",
+    "id":6,
+    "name":"Forever and Forevr:The Courtship of Henery Longfellow and Fanny Appleton",
+    "price":56.50,
+    "isInstock":true,
+    "img":"https://books.toscrape.com/media/cache/d6/58/d658a1485b130ff26ca5fb0d5975ed2e.jpg"
+},
+{
+    "type":"historical fiction",
+    "id":7,
+    "name":"The Mariage oppposites",
+    "price":28.08,
+    "isInstock":true,
+    "img":"https://books.toscrape.com/media/cache/0f/c2/0fc21ec3489cb23116778ee84f425eca.jpg"
+},
+{
+    "type":"Religion",
+    "id":8,
+    "name":"athe Book of Mormon",
+    "price":24.57,
+    "isInstock":true,
+    "img":"https://books.toscrape.com/media/cache/83/db/83dbf86eb0fed1d99de2148eac4eb064.jpg"
+}
+]
