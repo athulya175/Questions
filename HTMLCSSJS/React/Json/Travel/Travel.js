@@ -106,11 +106,64 @@ fetch("./Travel.json")
 })
 */
 
+function createLists(type){
+    let leftUnorder=document.createElement("ul")
+    leftUnorder.className="leftUnorder"
+    let li=document.createElement("li")
+    li.className="lists"
+    li.textContent=type.charAt(0).toUpperCase()+type.slice(1)
+    li.setAttribute("dataType",type)
+    leftUnorder.appendChild(li)
+    return leftUnorder
+}
 fetch("./Travel.json")
 .then(response=>response.json())
 .then(data=>{
     let containerLeft=document.querySelector(".containerLeft")
     let uniqueTitle=[...new Set(data.map(item=>item.type))]
-    
+    uniqueTitle.forEach(tit=>{
+        let leftUnorder=createLists(tit)
+        containerLeft.appendChild(leftUnorder)
+    })
+
 })
 
+function createCard(pdt){
+    let card=document.createElement("div")
+    card.className="card"
+    card.innerHTML=`
+    <div class="subcard">
+    <img src=${pdt.img}>
+    <p class="bookTitle">${pdt.name}</p>
+    <div class="stock">
+    <i class="fa fa-check"></i>
+    <span>In stock</span>
+    </div>
+    <button class="addCart">Add to basket</button>
+    </div>
+    `
+    return card
+}
+fetch("./Travel.json")
+.then(response=>response.json())
+.then(data=>{
+    let containerRight=document.querySelector(".containerRight")
+    data.forEach(pdt=>{
+        let card=createCard(pdt)
+        containerRight.appendChild(card)
+    })
+    let bookType=[...new Set(data.map(x=>x.type))]
+    let lists=document.querySelectorAll(".lists")
+    lists.forEach(lst=>{
+        lst.addEventListener("click",()=>{
+            let category=lst.getAttribute("dataType")
+            containerRight.innerHTML=""
+            let filterd=data.filter(pdt=>pdt.type===category)
+            filterd.forEach(pdt=>{
+                 let card=createCard(pdt)
+            containerRight.appendChild(card)
+        })
+            })
+           
+    })
+})

@@ -11,6 +11,8 @@ body{
     font-weight: 400;
     color: black;
     font-family: HM;
+    margin: 0;
+    padding: 0;
   
 }
 header{
@@ -52,6 +54,11 @@ header{
     background: #ffff;
     border-bottom: #cccc;
 }
+.titleLayout{
+    position: relative;
+    border-bottom: 1px solid #cccc;
+}
+
 .titlebutton{
     z-index: 1004;
     background: #ffff;
@@ -143,6 +150,10 @@ ul{
     border: 1px solid #000000;
     padding: 8px;
 }
+.filterButtonList.active{
+    background-color: #000000;
+    color: #fff;
+}
 .heading{
     margin: 48px 24px 64px !important;
     font-size: 32px;
@@ -200,7 +211,7 @@ ul{
     display: flex;
     flex-direction: column;
     background: #fff;
-  
+} 
 .cardtop img{
     width: 100%;
     height: auto;
@@ -209,4 +220,83 @@ ul{
 .cardbtm{
     padding: 10px;
 }
+.sortul{
+    border: 1px solid #000000;
+    inset-inline-start: 0;
+    position: absolute;
+    padding: 0;
+    list-style: none;
+    background-color: #fff;
+    overflow: auto;
+    max-height: 480px;
+    min-width: 200px;
+    max-width: 320px;
+    width: max-content;
+    z-index: 1000;
+    margin: 4px 0;
+    overscroll-behavior: contain;
+}
+.dropDown{
+    margin-bottom: 0;
+    border:1px solid #000000;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    height: 48px;
+    padding: 16px;
+    justify-content: space-between;
+    white-space: nowrap;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+.dropDown.active{
+    background:#f2f3f2;
+}
+.dropcontent{
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+    color: #000000;
+}
+.sorttext{
+    display: flex;
+    align-items: flex-start;
+    column-gap: 8px;
+}
+.sortInput{
+    /* appearance: none; */
+     appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin: 0;
+    font: inherit;
+    color: #000000;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 50%;
+    outline: none;
+  
+}
+.sortInput:checked{
+    border-color: black;
+}
+.sortInput:checked::before{
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: #000000;
+    border-radius: 50%;
+  
+   
+}
+
 
