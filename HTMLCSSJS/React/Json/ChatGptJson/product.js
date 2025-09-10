@@ -70,10 +70,10 @@ fetch("./product.json")
     }
 })
 
-let mainContainer=document.createElement("div")
-    mainContainer.className="mainContainer"
+
+
     let Orderedlist=document.createElement("ol")
-    Orderedlist.classList="orderedList"
+    Orderedlist.classList="Orderedlist"
 function createCard(pdt){
     let orderli=document.createElement("li")
     orderli.className="orderLi"
@@ -81,12 +81,40 @@ function createCard(pdt){
     <article class="cardlayout">
     <div class="cardimg"><img src=${pdt.img}></div>
     <p class="starRating"></p>
-    <h3>${pdt.tit}</h3>
+    <h3 class="bookname">${pdt.name}</h3>
     <div class="details">
     <p class="price">${pdt.price}</p>
     <p class="instrock"></p>
     <button type="submit" class="btn">Add to basket</button>
     </div>
     </article>`
-
+    return orderli
 }
+
+fetch("./product.json")
+.then(response=>response.json())
+.then(data=>{
+     let inner=document.querySelector(".inner")
+    let bookli=document.querySelectorAll(".bookli")
+    inner.appendChild(Orderedlist)
+    data.forEach(pdt=>{
+       
+        let orderli=createCard(pdt)
+        Orderedlist.appendChild(orderli)
+        // inner.appendChild(Orderedlist)
+        
+    })
+   
+    bookli.forEach(clk=>{
+        clk.addEventListener("click",()=>{
+            let category=clk.getAttribute("dataType")
+            Orderedlist.innerHTML=""
+            let filtered=data.filter(pdt=>pdt.type===category)
+            filtered.forEach(pdt=>{
+                let orderli=createCard(pdt)
+                Orderedlist.appendChild(orderli)
+                // inner.appendChild(Orderedlist)
+            })
+            })
+        })
+    })
