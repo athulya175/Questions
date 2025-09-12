@@ -6,7 +6,23 @@
 */
 
 // creating a promise
-let myPromise=new Promise((resolve,reject)=>{
-    let success=true;
+// let myPromise=new Promise((resolve,reject)=>{
+//     let success=true;
     
+// })
+let container=document.querySelector(".container")
+let btn=document.createElement("button")
+btn.className="btn"
+btn.textContent="Click me to display Date and Time"
+container.appendChild(btn)
+let displayTime=document.createElement("div")
+// displayTime.className="displayTime"
+container.appendChild(displayTime)
+let date =new Date()
+console.log(date)
+btn.addEventListener("click",()=>{
+    displayTime.textContent=date
+
 })
+
+
